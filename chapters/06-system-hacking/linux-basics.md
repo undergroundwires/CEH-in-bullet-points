@@ -1,0 +1,188 @@
+# Linux basics
+
+- See also Linux log files
+
+## Linux folders
+
+- `/`: Root
+- `/var`: Variable Data / Log Files
+  - See also [Linux security logs | Covering tracks](./covering-tracks.md#linux-security-logs)
+- `/bin`: Binaries / User Commands
+- `/sbin`: Sys Binaries / Admin Commands
+- `/root`: Home dir for root user
+- `/boot`: Store kernel
+- `/proc`: Direct access to kernel
+- `/dev`: Hardware storage devices
+- `/mnt`: Mount devices
+- `/etc`: Contain all your system configuration files in it e.g.
+  - [Hosts file](./../10-social-engineering/social-engineering-types.md#pharming)
+  - [Firewall settings](./../11-firewalls-ids-and-honeypots/firewall-overview.md#firewalld)
+  - [Password files](./cracking-passwords-overview.md#linux-passwords)
+  - `/etc/sudoers` that controls
+    - Who can run what commands as what users on what machines
+    - Special things such as whether you need a password for particular commands
+- See also [path obfuscation | Evading IDS](./../11-firewalls-ids-and-honeypots/evading-ids.md#path-obfuscation)
+
+## File permissions in Linux
+
+- Assigned via the use of the binary equivalent for each `rwx` group
+- Read-only is equivalent to 4, write is 2, and execute is 1
+- To accumulate permissions, add the numbers
+  - 4 is read-only
+  - 6 is read and write
+  - 7 is read, write and execute
+- Order
+  - First number corresponds to the user
+  - Second to the group
+  - Third is to all others.  
+- E.g. `chmod 744 anyfile`
+  - Allow all privileges to the user, read-only for the group, read-only for all others.
+
+## Run processes in background
+
+- Using `&` will cause the program to run in the background.
+- Makes it only useful for programs that do not need input.
+- The program will terminate if you log out
+- Program can be brought to foreground using `fg <jobnumber>`
+
+## 📝 Common linux commands
+
+- `adduser` / `addgroup`: adds a new user and group to a system.
+- `apropos`: quickly searches the names and descriptions of all available man pages.
+- `ar`: creates, modifies, or extracts archives.
+- `arch`: prints the machine's architecture.
+- `bzip2`: creates compressed file archives in bzip2 format.
+- `cal` / `ncal`: displays a calendar in the output.
+- `cat`: concatenates files, or data provided on standard input, and prints it on the standard output.
+- `cd`: changes user's present working directory.
+- `chattr`: lists and edits extended filesystem attributes for files and folders like the immutable attribute.
+- `chgrp`: changes the group ownership of a file.
+- `chmod`: changes access permissions for a file.
+- `chown`: changes the ownership and group of a file.
+- `cksum`: prints the CRC checksum and byte count for the input.
+- `clear`: clears the terminal screen.
+- `cmp`: perform byte-by-byte comparison of two files.
+- `comm`: compare two sorted files line-by-line.
+- `cp`: copying files and directories.
+- `cpulimit`: limits the CPU usage of a process
+- `csh`: switches between Linux user shells.
+- `csplit`: splits a file into sections determined by context lines.
+- `curl`: downloads files from the internet by HTTP or HTTPS.
+- `date`: prints or sets the system date and time.
+- `dd`: copies a file, converting and formatting according to the operands.
+- `df`: displays the file system disk space usage in output.
+- `diff` | `diff3`: compare two files line by line.
+- `dig`: query DNS servers and to resolve DNS records.
+- `dir`: lists directory contents.
+- `dirname`: strips last component from a file name/path.
+- `dmesg`: prints or controls the kernel ring buffer.
+- `dmidecode`: command prints a system's DMI (aka SMBIOS) table contents in a human-readable format.
+- `dpkg`: a package manager for Debian/Debian-based systems.
+- `du`: displays disk usage of files present in a directory as well as its sub-directories.
+- `echo`: displays whatever input text is given to it.
+- `ed`: a line-oriented text editor.
+- `eject`: eject removable media (typically, a CD ROM or floppy disk).
+- `env`: displays the current environment, and edit it.
+- `exit`: causes the shell to exit.
+- `expand`: converts tabs present in the input file(s) into spaces, and writes the file contents to standard output.
+- `expr`: evaluates expressions e.g. `expr 1 + 2` outputs `3`.
+- `factor`: prints the prime factors of the input number.
+- `fgrep`: grep with -F option not treating regular expression metacharacters as special, processing the information as simple string instead.
+- `find`: search for files in a directory as well as its sub-directories.
+- `fold`: wraps each input line to fit in specified width.
+- `free`: displays the amount of free and used memory in the system.
+- `grep`: searches for a specified pattern in a file (or files) and displays in output lines containing that pattern.
+- `groups`: displays the name of groups a user is part of.
+- `gzip`: compresses the input file, replacing the file itself with one having a .gz extension.
+- `gunzip`: compressed with gzip command can be restored to their original form using the gunzip command.
+- `head`: displays the first 10 lines of the file to standard output.
+- `hostname`: displays and sets the system's host name.
+- `history`: display the history of commands that you typed in on the shell.
+- `id`: prints user and group information for the current user or specified username.
+- `ifconfig`: fetch esinformation related to network interfaces and configure network interfaces.
+- `join`: joins lines of two files on a common field.
+- `kill`: helps user kill a process by its ID sending the TERM signal to it.
+- `killall`: kills a process by its name.
+- `last`: shows listing of last logged in users.
+- `ldd`: displays in output dependencies of a shared library.
+- `ln`: creates link between files.
+- `locate`: locate command helps user find a file by name.
+- `logname`: prints the user-name of the current user.
+- `look`: displays lines beginning with a given string.
+- `ls`: lists contents of a directory in output.
+- `lshw`: extracts and displays detailed information on the hardware configuration of the machine.
+- `lscpu`: displays in output system's CPU architecture information (such as number of CPUs, threads, cores, sockets, and more).
+- `lsof`: displays information related to files opened by processes.
+- `man`: access reference manual for commands, programs/utilities, as well as functions.
+- `md5sum`: print or check MD5 (128-bit) checksums.
+- `mkdir`: creates directories.
+- `mkfifo`: creates named pipes.
+- `more`: a filter for paging through text one screenful at a time.
+- `mv`: either moves a file from one directory to another, or renames it.
+- `nano`: launches the 'nano' text editor.
+- `netstat`: prints network connections, routing tables, interface statistics, masquerade connections, and multicast memberships.
+  - Used for e.g. [Port monitoring | Malware analysis](./../07-malware/malware-analysis.md#port-monitoring)
+- `nice`: runs a program with modified scheduling priority.
+- `nl`: writes contents of a file to output, and prepends each line with line number.
+- `nm`: display symbols from object files.
+- `nproc`: displays the number of processing units available to the current process.
+- `od`: dump files in octal as well as some other formats.
+- `passwd`: used for changing passwords for user accounts.
+- `paste`: merges lines of files
+- `pidof`: gives the process ID of a running program/process.
+- `ping`: check swhether or not a system is up and responding.
+- `ps`: displays information (in the form of a snapshot) about the currently active processes.
+- `pstree`: produces information about running processes in the form of a tree.
+- `pwd`: displays the name of current/working directory.
+- `rm`: removes files and/or directories.
+- `rmdir`: deletes empty directories.
+- `scp`: securely copies files between systems on a network.
+- `screen`: keeps a terminal session open even when your SSH connection is interrupted,
+- `sdiff`: performs a side-by-side merge of differences between two files.
+- `sed`: a stream editor that allows users to perform basic text transformations on an input stream (a file or input from a pipeline).
+- `seq`: prints numbers from FIRST to LAST, in steps of INCREMENT,
+- `sha1sum`: print or check SHA1 (160-bit) checksums.
+- `shutdown`: shut the system in a safe way.
+- `size`: lists the section sizes as well as the total size for an object or archive file.
+- `sleep`: specify delay for a specified amount of time.
+- `sort`: sort lines of text files.
+- `split`: splits a file into fixed-size pieces.
+- `ssh`: basically OpenSSH SSH client.
+- `ssh-keygen`: creates a private/public key pair for SSH.
+- `stat`: displays status related to a file or a file-system.
+- `strings`: displays in output printable character sequences that are at least 4 characters long.
+- `su`: change user-identity.
+- `sudo`: lets a permitted user run a command as another user (usually root or superuser).
+- `sum`: prints checksum and block counts for each input file.
+- `tac`: prints input files in reverse.
+- `tail`: displays in output the last 10 lines of a file.
+- `talk`: lets users talk with each other.
+- `tar`: creates as well as extract archive files.
+- `tee`: reads from standard input and write to standard output as well as files.
+- `test`: checks file types and compare values.
+- `time`: summarizes system resource usage of a program.
+- `top`: gives a dynamic real-time view of a running system (in terms of its processes).
+- `touch`: changes file timestamps (the access and modification times).
+- `tr`: translates/squeezes/deletes characters.
+- `tty`: prints the filename of the terminal connected to standard input.
+- `uname`: prints certain system information.
+- `unexpand`: convert spaces into tabs.
+- `uniq`: report or omit repeated lines.
+- `unexpand`: converts spaces present in the input file(s) into tabs, and writes the file contents to standard output.
+- `uptime`: tells how long the system has been running.
+- `users`: displays in output the usernames of users currently logged in to the current host.
+- `vdir`: lists information about contents of a directory (current directory by default).
+- `vim`: text/programming editor.
+- `w`: displays information about the users currently on the machine, and their processes.
+- `wall`: writes and sends a message to other users that are currently logged in.
+- `watch`: monitors a program's output.
+- `wc`: prints newline, word, and byte counts for a file.
+- `wget`: perform a non-interactive download of files from the Web.
+- `whatis`: displays single-line manual page descriptions.
+- `which`: locates a command - the file and the path of the file that gets executed.
+- `who`: shows who is logged on.
+- `whereis`: shows in output locations of the binary, source, and manual page files for a command.
+- `whoami`: prints effective userid of the current user.
+- `xargs`: builds and executes command lines from standard input.
+- `yes`: outputs a string repeatedly until killed.
+- `zcat`: displays the content of gzip compressed files.
