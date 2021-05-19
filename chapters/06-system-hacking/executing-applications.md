@@ -20,7 +20,7 @@
 
 ### Hardware keylogger
 
-- ![hardware keylogger](img/hardware-keylogger.jpg)
+- ![Hardware keylogger](img/hardware-keylogger.jpg)
 - Look like USB drives and are designed to record keystrokes, which are stored on the device.
 - Placed between a keyboard plug and USB socket
 - Cannot be detected by antispyware or antivirus programs.

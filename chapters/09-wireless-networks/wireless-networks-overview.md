@@ -47,7 +47,7 @@
     - Most common type of antenna used in wireless communications and networks, especially WiFi
     - Used also in wireless base stations
     - Least concentrated and lower range
-    - [3D illustration of omni-directional antenna](img/omnidirectional.jpg)
+    - ![3D illustration of omni-directional antenna](img/omnidirectional.jpg)
     - **Dipole**: Used for closer proximity e.g. mobile phones, client connections instead of site-to-site
 
 ## Wireless encryption

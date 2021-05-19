@@ -68,7 +68,7 @@
        - Frames that contain information about STP that's between exchanged switches
   3. Rouge router becomes elected as root switch
      - All the traffic will cross this switch giving the attacker possibility to sniff all traffic in the company
-  - [STP manipulation attack illustration](img/stp.png)
+  - ![STP manipulation attack illustration](img/stp.png)
 - Allows for
   - **DoS attacks**
     - Recalculation of STP have interruption on the system as the root bridge changes

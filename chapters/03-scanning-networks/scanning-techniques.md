@@ -112,7 +112,7 @@
 
 - 📝 Works by sending a TCP frame with `FIN`, `URG`, and `PUSH` flags set.
 - 🤗 **Christmas tree packet**: packet with every option set, like bulbs on a Christmas tree
-- [XMAS scan response interpretation](img/xmas-scan.png)
+- ![XMAS scan response interpretation](img/xmas-scan.png)
 - Tools
   - Hping: `hping3 -F -P -U <ip-address> -p <port-number>`
     - `-F` for `FIN`, `-P` for `PUSH`), `-U` for `URG`

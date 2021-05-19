@@ -60,7 +60,7 @@
          - `a`: arp posion
          - `c`: parse out passwords and usernames.
      - [Cain and Abel (Cain & Abel)](./sniffing-tools.md#cain-and-abel) on Windows
-   - ![after ARP spoofing attack](./img/arp-spoofing-after.png)
+   - ![After ARP spoofing attack](./img/arp-spoofing-after.png)
 4. **Sniff**
    - Now you sniff the traffic between two devices.
      - If through HTTPS & SSL you can only see basic data such as User Agent and domain names.

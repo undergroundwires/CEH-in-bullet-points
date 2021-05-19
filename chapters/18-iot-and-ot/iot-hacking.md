@@ -64,7 +64,7 @@
 ## Five layer IoT architecture
 
 - Each layer is utilized by layer below without knowledge of other layers
-- [IoT 5 Layered Architecture](./img/iot-5-layer-architecture.png)
+- ![IoT 5 Layered Architecture](./img/iot-5-layer-architecture.png)
 - Read more: [IoT Elements, Layered Architectures and Security Issues: A Comprehensive Survey](https://www.mdpi.com/1424-8220/18/9/2796/htm)
 
 ### Business layer

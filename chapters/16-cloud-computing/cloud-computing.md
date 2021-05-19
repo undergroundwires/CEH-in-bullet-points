@@ -62,7 +62,7 @@
 
 ### IaaS vs PaaS vs SaaS
 
-[SaaS vs IaaS vs PaaS](img/saas-vs-iaas-vs-paas.png)
+![SaaS vs IaaS vs PaaS](img/saas-vs-iaas-vs-paas.png)
 
 ### Identity-as-a-Service (IDaaS)
 
