@@ -76,7 +76,7 @@
   - **Contact information**
     - E.g. sitting in a near coffee to take photos and take names. You can then look at their contact information in list of employees (if publicly available somewhere). They become suspectable to social engineering.
   - **Information about other organizations**
-    - 🤗 E.g. You can come with a rack suit to fix air-conditioning devices and say "hey there's a problem in air conditioning on floor 14" or "regular maintenance" or "one of your devices is due.". A security personal mey escort you but he won't watch everything carefully, you can place a Raspberry Pie and connect it to electricity.
+    - 🤗 E.g. You can come with a rack suit to fix air-conditioning devices and say "hey there's a problem in air conditioning on floor 14" or "regular maintenance" or "one of your devices is due.". A security personal mey escort you but he won't watch everything carefully, you can place a Raspberry Pie and connect it to electricity. Refer to the following video: [Sneaking in EVERYWHERE for FREE (Yellow Vest Experiment)](https://www.youtube.com/watch?v=GyvRamX1VyA)
       - Stupid and simple. Something too complex has higher risks of not working as the dumber it is, the simple it is, it'll probably work.
 
 ## 2. Attack phase
