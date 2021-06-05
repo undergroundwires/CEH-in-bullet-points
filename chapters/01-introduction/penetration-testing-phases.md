@@ -84,10 +84,10 @@
 - Phase where target gets compromised.
 - Information gathered in the previous one is used to carry out an attack.
 - Steps
-  1. [Penetrate the perimeter](#1-penetrating-the-perimeter)
-  2. [Acquire target](#2-target-acquisition)
-  3. [Escalate privileges](#3-privilege-escalation)
-  4. [Execute, implant, retract](#4-execute-implant-retract)
+  1. [Penetrate the perimeter](#a-penetrating-the-perimeter)
+  2. [Acquire target](#b-target-acquisition)
+  3. [Escalate privileges](#c-privilege-escalation)
+  4. [Execute, implant, retract](#d-execute-implant-retract)
 
 ### a. Penetrating the perimeter
 
