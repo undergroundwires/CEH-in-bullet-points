@@ -29,7 +29,7 @@
 ### Understanding the clients requirements
 
 - Pen-tester needs to understand the client's requirements.
-  - 💡 Also make sure client understand that them as well as they may not understand what they're asking you to do
+  - 💡 Also make sure client understands that themselves as well as they may not understand what they're asking you to do
 - Important for testers reputation and clients satisfaction.
 - 💡 Create checklists.
   - Make suggestions
@@ -76,7 +76,7 @@
   - **Contact information**
     - E.g. sitting in a near coffee to take photos and take names. You can then look at their contact information in list of employees (if publicly available somewhere). They become suspectable to social engineering.
   - **Information about other organizations**
-    - 🤗 E.g. You can come with a rack suit to fix air-conditioning devices and say "hey there's a problem in air conditioning on floor 14" or "regular maintenance" or "one of your devices is due.". A security personal mey escort you but he won't watch everything carefully, you can place a Raspberry Pie and connect it to electricity.
+    - 🤗 E.g. You can come with a rack suit to fix air-conditioning devices and say "hey there's a problem in air conditioning on floor 14" or "regular maintenance" or "one of your devices is due.". A security personal mey escort you but he won't watch everything carefully, you can place a Raspberry Pie and connect it to electricity. Refer to the following video: [Sneaking in EVERYWHERE for FREE (Yellow Vest Experiment)](https://www.youtube.com/watch?v=GyvRamX1VyA)
       - Stupid and simple. Something too complex has higher risks of not working as the dumber it is, the simple it is, it'll probably work.
 
 ## 2. Attack phase
@@ -84,14 +84,14 @@
 - Phase where target gets compromised.
 - Information gathered in the previous one is used to carry out an attack.
 - Steps
-  1. [Penetrate the perimeter](#1-penetrating-the-perimeter)
-  2. [Acquire target](#2-target-acquisition)
-  3. [Escalate privileges](#3-privilege-escalation)
-  4. [Execute, implant, retract](#4-execute-implant-retract)
+  1. [Penetrate the perimeter](#a-penetrating-the-perimeter)
+  2. [Acquire target](#b-target-acquisition)
+  3. [Escalate privileges](#c-privilege-escalation)
+  4. [Execute, implant, retract](#d-execute-implant-retract)
 
-### 1. Penetrating the perimeter
+### a. Penetrating the perimeter
 
-- Trying to bypass IDS (Intrusion detection system) and firewall
+- Trying to bypass IDS (Intrusion Detection System) and firewall
 - A way is to use social engineering to test out the boundaries and find a way into the system.
 - **Firewall testing** techniques include
   - ICMP probes
@@ -112,9 +112,9 @@
       - 🤗 MAC address lets you know who the manufacturer is. Manufacturer information can give you idea of what kind of OS they run. You might get what devices they are running and how they are shipped. You can go to the distributor and put some physical keyloggers or sniffers e.g. a Raspberry Pi into a large router/switch.
   - By cross checking them later again, it is possible to identify unauthorized devices.
 
-### 2. Target acquisition
+### b. Target acquisition
 
-- Done after you scanning and penetration of the perimeter and select a target machine/device
+- Done after scanning and penetrating of the perimeter and selecting a target machine/device
 - Involves vulnerability scans to find vulnerabilities which can be later exploited
 - 📝 Includes:
   - **Active probing assaults**
@@ -128,7 +128,7 @@
     - You attempt to access and extract as much as data as you can
     - Pick-locking: try to unlock it in every possible way
 
-### 3. Privilege escalation
+### c. Privilege escalation
 
 - 📝 Done once the access to the system is granted
 - Goal is to grant elevated access.
@@ -144,7 +144,7 @@
   - **[Social engineering](./../10-social-engineering/social-engineering-overview.md)**
     - E.g. you realized that there's no strict policy regarding e-mails. You send an e-mail for phishing scheme, gain more information when the person clicks on that link, you can then execute arbitrary code if e-mail client is old (unlikely).
     - E.g. phone-call and ask what you need: works way more than it should
-- 🤗 A lot of companies have state-of-art perimeter
+- 🤗 A lot of companies have state-of-the-art perimeter
   - inside perimeter they have very old equipment and OS
   - they don't emphasize much on security interior as they do in external
     - once you pass the perimeter, you're more likely to find something inside
@@ -152,7 +152,7 @@
   - Running services with the least privileged accounts
   - Implementing [multi-factor authentication/authorization](./identity-access-management-(iam).md#multi-factor-authentication-mfa)
 
-### 4. Execute, implant, retract
+### d. Execute, implant, retract
 
 - Involves compromising the system with code.
 - Techniques include
@@ -160,8 +160,8 @@
   - buffer overflows to execute arbitrary code.
   - using [viruses](./../07-malware/viruses.md), [trojans](./../07-malware/trojans.md), rootkits
   - installing [backdoor](./../07-malware/malware-overview.md#backdoor)s
-- Retract means that being able to exit without leaving any trace behind
-  - Traces left can cause hardwork to fall down as it would be patched and you cannot get back again.
+- Retract means being able to exit without leaving any traces behind
+  - Traces left behind can cause suspicions and in effect vulnerablities would be patched and you cannot gain access to the target machine back using the same method.
   - Delete all the logs that indicates you existed to ensure persistent remote access.
   - Good idea is to figure out their antiviruses, and test your execution in a VM with same antivirus and security measures to not get detected by a random scan.
   - If alarm is raised, you might be detected, put it in the report and result of whether the flag was investigated.
@@ -169,7 +169,7 @@
 ## 3. Post-attack phase
 
 - The tester restores the system to the pretest state.
-- ❗Don't leave your stuff accidental or on purpose as it breaks the law either way.
+- ❗Don't leave your stuff be it accidentally or on purpose as it breaks the law either way.
   - Examples
     - Delete any malware/rootkit installed
     - Recover all files that were deleted
