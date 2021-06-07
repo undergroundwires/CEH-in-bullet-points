@@ -56,8 +56,8 @@
   - E.g. through external configuration files
 - Dynamic runtime injection
   - E.g. stealing data in memory
-- Unintented permissions
-- Escalated priviliges
+- Unintended permissions
+- Escalated privileges
 - Access to device and User info
 - Third-party code
 - Intent hijacking

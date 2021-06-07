@@ -6,7 +6,7 @@
   - [Point-to-Point Protocol (PPP)](./../15-cryptography/tunneling-protocols.md#ppp-point-to-point-protocol)
   - [Extensible Authentication Protocol (EAP)](#extensible-authentication-protocol-eap)
   - Protected Extensible Authentication Protocol (PEAP)
-  - [Lightweight Directory Access Protocol (LDAP)](./../04-enumaration/enumeration-overview.md#ldap)
+  - [Lightweight Directory Access Protocol (LDAP)](./../04-enumeration/enumeration-overview.md#ldap)
 - Most commonly used protocol is [RADIUS](#radius) and then [Diameter](#diameter), meanwhile older systems use [TACACS](#tacacs) and [TACACS+](#tacacs-tacacs-plus)
 
 ## RADIUS

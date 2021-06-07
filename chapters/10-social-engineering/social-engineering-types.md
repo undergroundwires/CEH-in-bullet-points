@@ -91,7 +91,7 @@
 
 - 📝 Redirect a website's traffic to a malicious one
 - Can be done through
-  - Exploiting DNS vulnerabilities such as [DNS posioning](./../08-sniffing/sniffing-attacks-overview.md#dns-poisoning)
+  - Exploiting DNS vulnerabilities such as [DNS poisoning](./../08-sniffing/sniffing-attacks-overview.md#dns-poisoning)
   - Host file modification
     - Windows location: `C:\Windows\System32\drivers\etc\hosts`
     - Linux location: `/etc/hosts`
@@ -179,7 +179,7 @@
 - **Malicious insiders**
   - Privileged users to inflict harm
   - E.g. dissatisfied or former employees that wants to take revenge
-- **Careless and gegligent insiders**
+- **Careless and negligent insiders**
   - Make errors and disregard policies
   - E.g. uneducated employees
 - **Infiltrators**

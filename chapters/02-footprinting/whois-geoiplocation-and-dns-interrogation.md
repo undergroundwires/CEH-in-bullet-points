@@ -23,7 +23,7 @@
     - Emails are usually still redirected to the owner.
       - 💡 Allows for e-mail phishing to learn who the actual owner is.
 - Domain server
-  - Who it's registered with e.g. [namecheap](https://www.namecheap.com), [gandi](https://www.gandi.net)
+  - Who it's registered with e.g. [NameCheap.com](https://www.namecheap.com), [Gandi.net](https://www.gandi.net)
   - 💡 Site owner might have account in the server, and you can test passwords there.
 - Net range
 - Domain expiration
@@ -36,7 +36,7 @@
   - **ARIN**: American Registry for Internet Numbers
   - **AFRINIC**: African Network Information Center
   - **APNIC**: Asia Pacific Network Information Center
-  - **RIPE**: Reseaux IP Europeens Network Coordination Centre
+  - **RIPE**: Réseaux IP Européens Network Coordination Centre
   - **LACNIC**: Latin American and Caribbean Network Information Center
 - 🤗 Every ISP, hosting company etc. must be member of one of the registries to get IP addresses.
 
@@ -46,7 +46,7 @@
 - Includes country, city, postal code, ISP, and so on
   - Country is mostly accurate but city, coordinates are not but approximated
 - Helps with social engineering attacks
-- E.g. [geoiptool.com](https://geoiptool.com)
+- E.g. [GeoIpTool.com](https://geoiptool.com)
 
 ### DNS interrogation
 
@@ -63,7 +63,7 @@
     ```
 
   - A records returns multiple IP addresses to increase speed and availability e.g. when hosting same content in multiple continents.
-- See also [DNS enumeration](./../04-enumaration/dns-enumeration.md#dns-records)
+- See also [DNS enumeration](./../04-enumeration/dns-enumeration.md#dns-records)
 
 #### Reverse DNS lookup
 

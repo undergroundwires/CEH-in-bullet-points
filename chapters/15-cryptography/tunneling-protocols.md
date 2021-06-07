@@ -1,4 +1,4 @@
-# Tunelling protocols
+# Tunneling protocols
 
 - Allows for the movement of data from one network to another
 - Involves repackaging the traffic data into a different form, usually using encryption
@@ -17,7 +17,7 @@
 
 - Cryptographic network protocol for operating network services securely over an unsecured network.
 - Usually used for remote command-line, login, and remote command execution.
-- Replaces unsecure [Telnet](./../03-scanning-networks/banner-grabbing.md#telnet)
+- Replaces insecure [Telnet](./../03-scanning-networks/banner-grabbing.md#telnet)
 - Introduces **SSH file transfer (SFTP)** or **secure copy (SCP)** protocols for secure file access,transfer and management.
 - **SSH handshake**
   1. [TCP three-way handshake](./../03-scanning-networks/tcpip-basics.md#three-way-handshake)
@@ -31,8 +31,8 @@
 - 📝 Part of IPv4 suite so it runs on layer 3 (internet layer) in [TCP/IP model](./../03-scanning-networks/tcpip-basics.md#tcpip-model) or layer 3 (transport) in [OSI model](./../03-scanning-networks/tcpip-basics.md#osi-model)
 - 📝 Provides security through
   - **Authentication** through authenticating both parts
-  - **Integrity** through using ahash algorithm to ensure that data is not tampered with.
-  - **Nonrepudiation** through using public key digital signatures to prove message origin.
+  - **Integrity** through using a hash algorithm to ensure that data is not tampered with.
+  - **Non-repudiation** through using public key digital signatures to prove message origin.
   - **Confidentiality** through encryption
 
 ### IKE (Internet Key Exchange)
@@ -87,5 +87,5 @@
 
 ### Point-to-Point Tunneling Protocol (PPTP)
 
-- Insecure/obselete method for implementing virtual private networks
+- Insecure/obsolete method for implementing virtual private networks
 - Uses a TCP control channel and a Generic Routing Encapsulation tunnel to encapsulate PPP packets.

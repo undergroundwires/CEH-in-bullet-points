@@ -74,7 +74,7 @@
 #### `-o*`: output options
 
 - `-oX` for XML output.
-- `-oG` for grepable output to be able to use linux `grep` command to search in text.
+- `-oG` for `grep`able output to be able to use linux [`grep` command](../06-system-hacking/linux-basics.md) to search in text
 - ❗ Not to be confused with `-O` (OS fingerprinting)
 
 #### Faster scans

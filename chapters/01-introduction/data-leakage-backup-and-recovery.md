@@ -14,7 +14,7 @@
 
 - Corporate espionage, phishing, malware
 - Business partners, consultants when company outsources
-  - Less surveilance than own employees.
+  - Less surveillance than own employees.
 
 #### Internal threats
 
@@ -83,7 +83,7 @@
    - because backing-up everything is too costly and takes up much storage.
 2. **Choose appropriate backup media**
    - Reliable, solid, preferably cheap
-   - E.g. USBs or portable media for personal users, and HDD/SDDs for companies with PCIs for more speed.
+   - E.g. USBs or portable media for personal users, and HDD/SDDs for companies for more speed.
 3. **Choose the appropriate backup strategy**
    - Check features such as scheduling, monitoring file changes to update back-ups, protocols, integrations...
    - Paid vs Free
@@ -99,7 +99,7 @@
      - If A fails you can reconstruct based on data in B and C
    - RAIDing is not only for backups, can also use for faster read and writes
      - E.g. BIG = Everything is seen as one drive. File is written two all of them. Crazy write & read speeds. If single disk dies all data is gone.
-5. **Choose the appropiate backup method**
+5. **Choose the appropriate backup method**
    - **Cold backup**
      - Performed while system is not in use.
      - E.g. at nights, during weekends.

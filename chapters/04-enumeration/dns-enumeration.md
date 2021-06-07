@@ -21,7 +21,7 @@
     - Points a domain to an IPv6 address, such as `FE80::0202:B3FF:FE1E:8329`.
   - **`MX`**
     - Mail eXchange records are used to direct emails sent to domain
-    - See also [MX records | Whois, GeoIpLocation and DNS interrogation](./../02-footprinting/whois-geoiplocation-and-dns-interogation.md#mx-records)
+    - See also [MX records | Whois, GeoIpLocation and DNS interrogation](./../02-footprinting/whois-geoiplocation-and-dns-interrogation.md#mx-records)
   - **`NS`**
     - Used to delegate a domain or subdomain to a set of name servers
   - **`SOA`**
@@ -53,16 +53,16 @@
 
 ## DNS enumeration techniques
 
-- Check all NS Records for [zone Ttransfers](#zone-transfers).
+- Check all NS Records for [zone transfers](#zone-transfers).
 - Enumerate general [DNS records](#dns-records) for a given domain.
 - Perform common SRV Record Enumeration.
   - Service records contain the hostname, port and priority of servers for a given service.
-  - Enumerates e.g. • LDAP • Exchange Autodiscovery • Kerberos...
+  - Enumerates e.g. • LDAP • Autodiscover for Exchange • Kerberos...
   - E.g. by `nmap --script dns-srv-enum --script-args "dns-srv-enum.domain='google.com'"`
 - Brute force subdomain and host A and AAAA records discovery with given top domain and wordlist.
 - DNS PTR lookup given a IP range CIDR range
   - Querying dns for PTR record of each IP in subnet
-- See also [DNS interrogation](./../02-footprinting/whois-geoiplocation-and-dns-interogation.md#dns-interrogation)
+- See also [DNS interrogation](./../02-footprinting/whois-geoiplocation-and-dns-interrogation.md#dns-interrogation)
 
 ### DNS cache snooping
 

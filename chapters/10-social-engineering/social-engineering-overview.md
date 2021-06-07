@@ -23,7 +23,7 @@
 2. **Select target**
    - Choose a target employee
    - Some employees are more vulnerable than others
-     - Easy targets also known as **Rebecca** and **Jessica** mean a person who is an easy target for social engineering  such as the receptionist of a companyengineering, such as
+     - Easy targets also known as **Rebecca** and **Jessica** mean a person who is an easy target for social engineering such as the receptionist of a company
      - E.g. receptionists, help-desk personnel, tech support, system administrators, clients.
    - A frustrated target is more willing to reveal information
 3. **Relationship**
@@ -62,7 +62,7 @@
 - Information is used for spear phishing, impersonation, and identity theft.
 - Can e.g. create a fake user group "Employees of the company" in **Facebook**
   - Invite people to group and collect credentials such as birth date, employment/education backgrounds.
-- Can scan profile pages in **Linkedin** and **Twitter**.
+- Can scan profile pages in **LinkedIn** and **Twitter**.
 
 ### Steps of social media impersonation
 
@@ -83,7 +83,7 @@
 - **Physical measures**
   - E.g. air quality, power concerns, humidity-control systems
 - **Technical measures**
-  - E.g. smartcards and biometrics
+  - E.g. smart cards and biometrics
 - **Operational measures**
   - E.g. policies and procedures to enforce a security-minded operation.
 - **Access control**

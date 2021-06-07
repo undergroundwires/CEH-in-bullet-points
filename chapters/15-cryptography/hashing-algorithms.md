@@ -58,7 +58,7 @@
 - Uses a combination of a cryptographic key and hash function such as SHA-1 or MD5.
 - Used for authentication and integrity checks.
 - E.g. `HMAC_SHA256("key", "The quick brown fox jumps over the lazy dog") = f7bc83f430538424b13298e6aa6fb143ef4d59a14946175997479dbc2d1a3cd8`
-- Uses **keyed hashing** to genarate hashed-based MACs (HMAC).  
+- Uses **keyed hashing** to generate hashed-based MACs (HMAC).  
   - Involves hashing a message with a • hash function and • a secret key.
   - Message authentication codes (MACs)
     - Cryptographic checksums
@@ -90,5 +90,5 @@
 
 - Converting a key (e.g. password) to a longer and more random key to e.g. use as encryption.
 - Makes encryption stronger as it increases the time and resources for brute-force attacks.
-- Usely done by re-hashing multiple (e.g. a few million) times
+- Usually done by re-hashing multiple (e.g. a few million) times
 - E.g. using slow key derivation functions such as PBKDF2

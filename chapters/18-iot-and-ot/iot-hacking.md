@@ -94,7 +94,7 @@
 - **Key security components**: key security layer, secure cloud computing, antivirus
 - **Vulnerabilities**
   - Exhaustion: Can disturb memory, battery e.g. after effect of a DoS
-  - Malwares
+  - Malware
 
 ### Network (transport) layer
 
@@ -125,17 +125,17 @@
 
 | Approx. range up to | Connectivity | Speed |
 |:-------------------:| ------------ | ----- |
-| 10 cm | NFC | 424 Kbit/s |
+| 10 cm | NFC | 424 kbit/s |
 | 1 m | RFID | 300 tags per second |
-| 10 m | Li-Fi | 100 Gbit/s |
-| 60 m | Bluetooth low energi (BLE) | 1 or 2 Mbit/s |
-| 100 m | WiFi | 1300 Mbit/s |
-| 1 km | Wi-Fi HaLow | 78 Mbit/s |
-| 2 km | 5G | 20 Gbit/s |
-| 30 km | LTE-Advanced | 300 Mbit/s |
+| 10 m | Li-Fi | 100 gbit/s |
+| 60 m | Bluetooth low energi (BLE) | 1 or 2 mbit/s |
+| 100 m | WiFi | 1300 mbit/s |
+| 1 km | Wi-Fi HaLow | 78 mbit/s |
+| 2 km | 5G | 20 gbit/s |
+| 30 km | LTE-Advanced | 300 mbit/s |
 | 70 km | Celullar | - (depends on 4g etc.) |
-| 1000 km | LPWAN | 200 Kbit/s |
-| World-wide | VSAT | 16 Mbit/s |
+| 1000 km | LPWAN | 200 kbit/s |
+| World-wide | VSAT | 16 mbit/s |
 
 #### Short-range wireless communication
 
@@ -160,7 +160,7 @@
 
 - **LTE-Advanced**: Formally submitted as a candidate 4G, often being described as 3.9G.
 - **Wi-Fi HaLow**: low power, long-range, also known as "WiFi for Internet of Things"
-- **5G**: Introduced in 2019, highest with minimum of 10 GBPS
+- **5G**: Introduced in 2019, highest with minimum of 10 Gbps
 
 #### Long Range Wireless Communication
 

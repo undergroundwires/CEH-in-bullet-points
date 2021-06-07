@@ -15,14 +15,14 @@
 - 📝 No direct contact with target
 - Rely on information that is publicly available.
 - Most difficult to detect
-- E.g. • News • job postings • [WHOIS](./whois-geoiplocation-and-dns-interogation.md#whois) databases • government records • document sifting • [dumpster diving | Social engineering](./../10-social-engineering/social-engineering-types.md#dumpster-diving) • [competitive analysis](#competitive-intelligence) • browser search • map lookup • DNS lookup • Facebook/Twitter search
+- E.g. • News • job postings • [WHOIS](./whois-geoiplocation-and-dns-interrogation.md#whois) databases • government records • document sifting • [dumpster diving | Social engineering](./../10-social-engineering/social-engineering-types.md#dumpster-diving) • [competitive analysis](#competitive-intelligence) • browser search • map lookup • DNS lookup • Facebook/Twitter search
 
 #### Open-source intelligence (OSINT)
 
 - 📝 Collection and analysis of information that is gathered from public, or open, sources
 - ❗ "Open-source" is unrelated to open-source software or collective intelligence
 - Categories: • media • internet • public government data • professional and academic publications • commercial data • grey literature
-- [awesome-osint | list of tools](https://github.com/jivoi/awesome-osint), [osintframework | graph of tools](https://osintframework.com/)
+- [awesome-osint | list of tools](https://github.com/jivoi/awesome-osint), [OsintFramework | graph of tools](https://osintframework.com/)
 
 #### Competitive intelligence
 
@@ -31,7 +31,7 @@
 - Tools include
   - Traffic statistics: [Alexa](https://alexa.com)
   - News: [Google finance](https://finance.google.com)
-  - Company plans/financials: • [SEC Info](https://www.secinfo.com) • [Experian](https://experian.com) • [Market Watch](https://marketwatch.com) • [Wall Street Monitor](https://twst.com) • [Euromonitor](https://euromonitor.com)
+  - Company plans/finances: • [SEC Info](https://www.secinfo.com) • [experian](https://experian.com) • [Market Watch](https://marketwatch.com) • [Wall Street Monitor](https://twst.com) • [EuroMonitor](https://euromonitor.com)
   - Company origins and development: • [EDGAR Database](https://sec.gov/edgar.shtml) • [Hoovers](https://hoovers.com) • [LexisNexis](https://lexisnexis.com) • [Business Wire](https://businesswire.com)
 
 ### Active footprinting
@@ -42,21 +42,21 @@
 - Examples
   - Buying beers for company employees to see what you can extract.
   - Network mapping with `nmap`, perimeter mapping, port scanning, web profiling...
-  - • E-mail tracking • Phishing scheme with an email • Querying name servers • File metadata • Social engineering • Extracting DNS information • Ttraceroute analysis
+  - • E-mail tracking • Phishing scheme with an email • Querying name servers • File metadata • Social engineering • Extracting DNS information • [Traceroute](./network-footprinting.md#traceroute) analysis
 - 💡 Easier idea to start with passive footprinting by gathering all publicly available data
   - Then organizing it, and putting in one place.
   - Then use active footprinting with starting probing for ports, networks, possible vulnerabilities etc.
 - 💡Good to learn more about stuff (employees) of a company
   - through them you can learn a lot more and gain a lot more access
   - e.g. contact them through social media and start a conversation
-    - e.g. join a conference that you see the person is attending on Linkedin and meet him.
+    - e.g. join a conference that you see the person is attending on LinkedIn and meet him.
 
 ## Footprinting information
 
 - **Network information**
   - Domains, subdomains
   - IP addresses
-  - [Whois](./whois-geoiplocation-and-dns-interogation.md#whois) and DNS records
+  - [Whois](./whois-geoiplocation-and-dns-interrogation.md#whois) and DNS records
   - VPN firewalls using e.g. [ike-scan](https://github.com/royhills/ike-scan)
 - **System information**
   - Web server operating systems
@@ -98,10 +98,10 @@
 - **[Recon-dog](https://github.com/s0md3v/ReconDog)**
   - Open-source CLI tool self-claimed as Reconnaissance Swiss Army Knife
   - Can extracts targets from STDIN (piped input) and act upon them
-  - Passive reconnaissance tool extracting all information with APIs without any contact witht target
-- **[Dmitry](https://github.com/jaygreig86/dmitry)** (Deepmagic Information Gathering Tool)
+  - Passive reconnaissance tool extracting all information with APIs without any contact with target
+- **[Dmitry](https://github.com/jaygreig86/dmitry)** (DeepMagic Information Gathering Tool)
   - CLI tool to analyze a website e.g. `dmitry https://cloudarchitecture.io`
-  - • Performs [WHOIS](./whois-geoiplocation-and-dns-interogation.md#whois) lookup on IP and domain • Retrieves [Netcraft](./search-engines-and-online-resources.md#netcraft) information • Search for subdomains/email addresses • Performs TCP scanning • Grabs banner for each port
+  - • Performs [WHOIS](./whois-geoiplocation-and-dns-interrogation.md#whois) lookup on IP and domain • Retrieves [Netcraft](./search-engines-and-online-resources.md#netcraft) information • Search for subdomains/email addresses • Performs TCP scanning • Grabs banner for each port
 
 ## Footprinting reports
 

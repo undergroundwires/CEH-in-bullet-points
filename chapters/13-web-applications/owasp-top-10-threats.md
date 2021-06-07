@@ -60,7 +60,7 @@
 - E.g. using **`&`** to end to query
   - Application code: `String filter = "(&(USER = " + user_name + ") (PASSWORD = " + user_password + "))";`
   - Attacker enters appends `)(&)` after user name like: `johnDoe)(&)`
-  - Attacker gets access as `&` ends the query and always evulates to true.
+  - Attacker gets access as `&` ends the query and always evaluates to `true`.
 
 #### SOAP injection
 
@@ -72,7 +72,7 @@
 #### Command injection
 
 - **Shell injection**
-  - Applies to web applications that programetically execute a command line
+  - Applies to web applications that programmatically execute a command line
 - **File injection**
   - E.g. exploiting by causing an application to run/show a malicious remote file
 - **HTML embedding**
@@ -171,12 +171,12 @@
 ### Insecure direct object references (IDOR)
 
 - 📝 Direct access to internal objects through URL without authorization checks
-- E.g. `cloudarchitecture.io/change_password.php?userid=victimusername` to reset victims password
+- E.g. `cloudarchitecture.io/change_password.php?userId=victimUsername` to reset victims password
 
 #### Missing Function Level Access Control
 
 - Bypassing access control checks by modifying the URL
-- E.g. reaching admin panel by modifying `cloudarchitecture.io/appinfo` to `cloudarchitecture.io/adminAppInfo`s
+- E.g. reaching admin panel by modifying `cloudarchitecture.io/appInfo` to `cloudarchitecture.io/adminAppInfo`s
 
 ### Countermeasures for broken access control
 
@@ -232,7 +232,7 @@
 ## Cross-Site Scripting (XSS)
 
 - Also known as **cross site scripting**
-- 📝 Taking untrusted data and sending it without input validation or escaping.
+- 📝 Taking untrusted data and sending it without input validation or escaping
 - 📝 Type of client-side [code injection](#code-injection)
 - Used to
   - hijack user sessions
@@ -266,7 +266,7 @@
 - Application sets value of an HTML parameter to an input without proper validation/sanitization
 
   ```html
-    page += "<input name='creditcard' type='TEXT'
+    page += "<input name='credit-card' type='TEXT'
     value='" + request.getParameter("CC") + "'>";
   ```
 
@@ -283,7 +283,6 @@ foo='+document.cookie</script>'.`
   - Only allows executing scripts from permitted domains.
 - Filter input on arrival
 - Set `HttpOnly` flag set for session cookies so they cannot be reached through JavaScript.
-
 - 📝 Escape HTML code
   - Escape untrusted HTTP request data based on the context in the HTML output
   - Use frameworks that automatically escape XSS by design

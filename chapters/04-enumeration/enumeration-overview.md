@@ -42,7 +42,7 @@
 ### Windows enumeration
 
 - **Enumerating all shares**
-  - `net share` or `net view \\servername /all`
+  - `net share` or `net view \\serverName /all`
 - **Enumerating machine configuration through null sessions**
   - Null sessions allow for enumeration of Windows machines to access information about the machine configuration.
   - E.g. `net use \\target\ipc$ "" /user: "`
@@ -147,7 +147,7 @@
   - Text-file that translates numerical OIDs to word-based OIDs.
     - E.g. `SYNOLOGY-SYSTEM-MIB::temperature.0`
   - You can collect information CPU usage level, disk usage level, network settings using vendor-specific OIDs.
-- Version 1, 2: (unsecure) No encryption, only "community string" and no encryption
+- Version 1, 2: (❗️ insecure) No encryption, only "community string" and no encryption
 - Version 3: Username + password and encryption
 
 #### SNMP enumeration tools
@@ -217,7 +217,7 @@
 #### NTP enumeration tools
 
 - [`ntptrace`](https://www.eecis.udel.edu/~mills/ntp/html/ntptrace.html): traces NTP servers back to the primary source.
-- [`ntpdc`](http://doc.ntp.org/4.1.2/ntpdc.htm): monitors operation of the NTP deamon, ntpd
+- [`ntpdc`](http://doc.ntp.org/4.1.2/ntpdc.htm): monitors operation of the NTP daemon, ntpd
 - [`ntpq`](http://doc.ntp.org/4.1.0/ntpq.htm): monitors NTP daemon ntpd operations and determines performance.
 - Other tools include: • NTP Time Server Monitor • NTP server Scanner • Nmap • Wireshark • AtomSync • NTPQuery, • PresenTense NTP Auditor • PresenTense Time Server • PresenTense Time Client • Lan Time Analyser...
 
@@ -247,7 +247,7 @@
 - `VRFY`: validates e-mail address that actually exists
 - `EXPN`: tells the actual delivery address of aliases and mailing lists
 - `RCPT TO`: Defines recipients of the messages
-- ❗ Some admins may turn off `VRFY` and `EXPN`, but not `RCPT TO` (or no one can recieve e-mail)
+- ❗ Some admins may turn off `VRFY` and `EXPN`, but not `RCPT TO` (or no one can receive e-mail)
 
 #### SMTP enumeration through tools
 

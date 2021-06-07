@@ -141,7 +141,7 @@
 
 ## Pros and cons of cloud computing
 
-### Advantages of Cloud Computing
+### Advantages of cloud computing
 
 - **Economical**: Less infrastructure cost, less cost of ownership, fewer capital expenses
 - **Operational**: cost efficient, elastic, quick provisioning, automatic updates, backup and recovery...
@@ -149,14 +149,14 @@
 - **Security**: Patch application and updates, less cost on security configurations, better disaster recovery, audit and monitoring on providers side, better management of security systems.
 - **Innovation**: Quick access to innovation
 
-### Disadvantages of Cloud Computing
+### Disadvantages of cloud computing
 
 - Organizations have limited control and flexibility
 - Prone to outages and other technical issues
 - Security, privacy, and compliance issues
 - Contracts and lock-ins
 - Depends on network connections
-- Can be hard to migrae from one to another
+- Can be hard to migrate from one to another
 
 ## Cloud regulations
 

@@ -32,7 +32,7 @@
 
 - New hardware for existing Internet Service Providers (ISP) where ISP charges per device.
 - Fulfilling software requirements where one software can only be installed on a single device.
-- Identity masking for pushing responsiblity for other users.
+- Identity masking for pushing responsibility for other users.
 - **MAC address randomization**: Implemented in Android, Linux, iOS, and Windows to prevent third parties from using the MAC address to track devices
 
 ### MAC spoofing attack
@@ -81,7 +81,7 @@
   - Enable **Root Guard** to not forward traffic to port with superior BPDUs
   - Enable **BPDU Guard** to enforce the STP domain borders
 
-## IRDP Spoofing
+## IRDP spoofing
 
 - **IRDP**: ICMP Router Discovery Protocol
   - Protocol for computer hosts to discover routers on their IPv4 local area network.

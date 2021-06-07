@@ -47,9 +47,9 @@
 - Combination of two protocols SPF + DKIM
 - It builds on them and adds more policy
 
-## Verifying email legitimity
+## Verifying email legitimacy
 
-- Double check FROM
+- Double check `FROM`
 - Check the spelling in domain name so it's coming from the domain of the company
   - If it's random e-mail check if it's from one of the biggest domain providers or if something legit.
 - Check IP of the domain

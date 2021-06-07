@@ -17,7 +17,7 @@
 - In scanning you're acting on gathered information to gather information
 - Examples
 
-| Reconnaissance | Scanning |
+| [Reconnaissance](#1-reconnaissance) | [Scanning](#2-scanning) |
 | ------ | ----- |
 | Scan the perimeter network you need the IP addresses | Use e.g. `nmap` to figure out what the configuration is. |
 | Get e-mails. | Use phishing to gather personal data |
@@ -41,7 +41,7 @@
 - Keeping admin/root privileges so hacker can continue using the system.
   - After breaking into a system, you attempt to elevate privileges to do more.
 - Maintain persistent access, because your connection might break, then you start again
-- Can prevent other hackers from accessing the system by installing backdoors, rootkits, or Trojans.
+- Can prevent other hackers from accessing the system by installing backdoors, rootkits, or trojans.
 - 💡 You can install tools to give you persistance access and gathers data to use compromise more such as keylogger.
 - 💡 You can use the machine as proxy so all traces are lead back to the proxy.
   - You can minimize the risks being discovered this way.
@@ -56,5 +56,5 @@
 - Activities:
   - Clear certain entries in log files: Not all, or it'll be suspicious
   - Masquerade your activities: Make them as similar as possible as legitimate activities
-    - E.g. good keyloggers masquerades itself behind legitimate activities
+    - E.g. a good keylogger masquerade itself behind legitimate activities
       - Mimics other programs behavior by adding more behavior.

@@ -101,7 +101,7 @@
 
 - Overloading a server with TCP ACK packets
 - TCP ACK packet is any TCP packet with the ACK flag set in the header.
-- ACK is short for "acknowledgement."
+- ACK is short for "acknowledgement"
   - TCP protocol requires that connected devices acknowledge they have received all packets in order
   - E.g. when all packets for an image is sent, ACK packet is required otherwise image is sent again.
 
@@ -186,7 +186,7 @@
 
 - **Slowloris**
   - Floods HTTP with headers for each request without actually completing them.
-  - 🤗 [Slowlaris presentation](https://samsclass.info/seminars/slowloris.pdf)
+  - 🤗 [Slowloris presentation](https://samsclass.info/seminars/slowloris.pdf)
 - 📝 **[R-U-Dead-Yet](https://sourceforge.net/projects/r-u-dead-yet/)**
   - Also known as ***RUDY***, ***R.U.D.Y.*** or ***R U Dead yet***
   - Submits long form fields using HTTP posts to the target server.
@@ -222,9 +222,9 @@
 
 - **Activity Profiling**: Detect Increases in activity levels, distinct clusters, average packet rate etc.
 - **Changepoint detection**: Stores and presents graph of traffic flow rate vs time for each IP/port.
-- **Wavelet-based signal analysis**: Devides incoming signal into various frequences as spectral components.
+- **Wavelet-based signal analysis**: Divides incoming signal into various frequencies as spectral components.
 
-### DoS prevention Strategies
+### DoS prevention strategies
 
 - Absorb the attack with additional resources e.g. through using a CDN.
 - Degrade or shut down services (start with non-critical services)

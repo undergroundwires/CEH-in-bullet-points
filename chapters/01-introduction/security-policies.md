@@ -90,11 +90,11 @@
 
 - Same as **Terms of Service** or **Terms of Use**
 - 📝 Description of what constitutes acceptable and unacceptable use of the Internet
-- Code of conduct governing the behaviour of a user whilst connected to the network/Internet.
+- Code of conduct governing the behavior of a user whilst connected to the network/Internet.
 - E.g.
   - ISP providers allows you to use unlimited bandwidth
     - In contract you see it says it's about "fair use"
-    - Fair use can be e.g. to not exceed 50% maximum potential bandwith that could be used with that bandwidth
+    - Fair use can be e.g. to not exceed 50% maximum potential bandwidth that could be used with that bandwidth
   - Prohibiting port scanning or security scanning
   - Never revealing a password
 

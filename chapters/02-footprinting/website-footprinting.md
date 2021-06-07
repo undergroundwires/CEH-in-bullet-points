@@ -43,9 +43,9 @@
 - In most of browsers you can right click and how source
 - Walkthrough
   - In almost any browser: Right click => Show source
-  - Check for HTML `<!-- comment -->` or JavaScript `// comment` comments.
-  - They are kipped by interpretors and compilers, only for human eyes
-  - They can be instructions for other devs, notes for themselves.
+  - Check for HTML `<!-- comment -->` or JavaScript `// comment` comments
+  - They are skipped by interpreters and compilers, only for human eyes
+  - They can be instructions for other developers, notes for themselves
     - E.g. this library won't work as this element is not supported
       - Gives you clues about what technology (frameworks, languages) they use in the background
 

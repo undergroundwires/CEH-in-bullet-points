@@ -4,7 +4,7 @@
   - discover vulnerabilities (and document)
   - evaluate the security
 - Detailed analysis of weaknesses in design, technical flaws, and vulnerabilities in organizations information security.
-- E.g. • [phishing](./../10-social-engineering/social-engineering-types.md#phishing) • [testing authentication](./../13-web-applications/hacking-web-applications.md#authentication-attacks) using [dictionaries](./../06-system-hacking/cracking-passwords-overview.md#dictionary-attack) • test if router is using an [obselete OS](./security-threats-and-attacks.md#operating-system-attacks)
+- E.g. • [phishing](./../10-social-engineering/social-engineering-types.md#phishing) • [testing authentication](./../13-web-applications/hacking-web-applications.md#authentication-attacks) using [dictionaries](./../06-system-hacking/cracking-passwords-overview.md#dictionary-attack) • test if router is using an [obsolete OS](./security-threats-and-attacks.md#operating-system-attacks)
 
 ## Purpose
 
@@ -130,7 +130,7 @@
 ## Security testing methodology
 
 - Approach to attempt to find vulnerabilities in the system's security mechanisms.
-- Used during e.g. [security audit](#security-audit), [vulnerability assesment](#vulnerability-assessment) and [penetration test](#penetration-test).
+- Used during e.g. [security audit](#security-audit), [vulnerability assessment](#vulnerability-assessment) and [penetration test](#penetration-test).
 - 💡 Using a good security testing methodology provides a repeatable framework
 
 ### Proprietary methodologies

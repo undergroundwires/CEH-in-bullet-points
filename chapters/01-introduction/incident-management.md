@@ -23,7 +23,13 @@
   9. **Post-incident activities** (lessons learnt)
      - Record what happened with final review.
      - Have discussion about how to avoid it in future.
-- 🤗 E.g. a developer in [Dropbox miscoded](https://www.cnet.com/news/dropbox-confirms-security-glitch-no-password-required/) authentication function to always return true. Anyone could login as whichever you user you want by just typing their e-mail. They had review policy but no one paid attention. They had protocols against major breach. Realized that it was critical and then they brought down the service to prevent huge damage (containment), and conducted investigation to see what has happened and started recovery process. It was recorded and documented for current and future employees.
+- 🤗 E.g. a developer in [Dropbox miscoded](https://www.cnet.com/news/dropbox-confirms-security-glitch-no-password-required/) authentication function to always return true.
+  - Anyone could login as whichever you user you want by just typing their e-mail.
+  - They had review policy but no one paid attention.
+  - They had protocols against major breach.
+  - Realized that it was critical and then they brought down the service to prevent huge damage (containment)
+  - Conducted investigation to see what has happened and started recovery process
+  - It was recorded and documented for current and future employees
 
 ## Emergency response plan
 

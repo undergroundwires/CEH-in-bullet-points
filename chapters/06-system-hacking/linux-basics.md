@@ -43,7 +43,7 @@
 - Using `&` will cause the program to run in the background.
 - Makes it only useful for programs that do not need input.
 - The program will terminate if you log out
-- Program can be brought to foreground using `fg <jobnumber>`
+- Program can be brought to foreground using `fg <job-number>`
 
 ## 📝 Common linux commands
 
@@ -130,7 +130,7 @@
 - `passwd`: used for changing passwords for user accounts.
 - `paste`: merges lines of files
 - `pidof`: gives the process ID of a running program/process.
-- `ping`: check swhether or not a system is up and responding.
+- `ping`: checks whether or not a system is up and responding.
 - `ps`: displays information (in the form of a snapshot) about the currently active processes.
 - `pstree`: produces information about running processes in the form of a tree.
 - `pwd`: displays the name of current/working directory.
@@ -182,7 +182,7 @@
 - `which`: locates a command - the file and the path of the file that gets executed.
 - `who`: shows who is logged on.
 - `whereis`: shows in output locations of the binary, source, and manual page files for a command.
-- `whoami`: prints effective userid of the current user.
+- `whoami`: prints effective `userid` of the current user.
 - `xargs`: builds and executes command lines from standard input.
 - `yes`: outputs a string repeatedly until killed.
 - `zcat`: displays the content of gzip compressed files.

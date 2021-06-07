@@ -115,4 +115,4 @@
   - Directory service
   - Data synchronization
   - Metadirectory
-  - Virtual Directory
+  - Virtual directory

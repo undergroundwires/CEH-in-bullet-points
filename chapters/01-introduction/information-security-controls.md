@@ -7,7 +7,7 @@
   - **Availability**: At all times data needs to be available to those who need it, e.g. stock market
   - **Confidentiality**: No leaks, e.g. ensuring policies are in-place
   - **Authenticity**: Only those who are authorized can access something
-  - **Non-repudition**: If you do something, you cannot say I did not do it, e.g. signatures, log files, camera videos.
+  - **Non-repudiation**: If you do something, you cannot say I did not do it, e.g. signatures, log files, camera videos.
 - Processes to achieve information assurance are:
   - Security policies
   - Network and user authentication strategy

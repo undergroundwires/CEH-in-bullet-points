@@ -2,9 +2,9 @@
 
 - Encryption of all data stored on a disk.
 - Data-at-rest protection
-- Protect the data stored in the disk and ensure its confidentiality.
+- Protect the data stored in the disk and ensure its confidentiality
 - 📝 Protects against someone who gains physical access to your device
-  - ❗ But does not protect from malwares or from being attacked by hackers over the internet
+  - ❗ But does not protect from malware or from being attacked by hackers over the internet
 
 ## Full Disk Encryption (FDE)
 

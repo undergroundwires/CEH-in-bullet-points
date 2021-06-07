@@ -61,7 +61,7 @@
   5. Patch is created
      - Sometimes vendor may not patch it e.g. if software is outdated or has no support.
   6. Patch is applied
-     - Sometimes they're not! E.g. home routers has vulnerabilities that has been known for years as ISPs do not usually configure routers after setup.
+     - Sometimes they're not! E.g. home routers has vulnerabilities that has been known for years as ISPs do not usually configure routers after setup
      - Timeframe between patch is created and applied is used by malicious hackers to maximum extend.
        - Many times corporations are slower to react which causes harm.
 
@@ -91,14 +91,14 @@
      - Get access to one of the systems
        - E.g. an Android phone. They have many vulnerabilities.
          - They don't get updates after a while.
-         - If they exceed design limits e.g. when operating when it's hot outside, then the hardware flaws occuring causes exploaitable software attacks such as [Bitsquatting](https://en.wikipedia.org/wiki/Bitsquatting)
+         - If they exceed design limits e.g. when operating when it's hot outside, then the hardware flaws occurring causes exploitable software attacks such as [Bitsquatting](https://en.wikipedia.org/wiki/Bitsquatting)
   5. Get access to
      - Information such as bank accounts, credit card details
      - After infecting one device, jump other devices in bank network if e.g. the mobile phone is also used in bank network.
 
 ### Doxing
 
-- Finding and publishing someone's personally identifial information for malicious reasons.
+- Finding and publishing someone's personally identifiable information (PII) for malicious reasons.
 - E.g. an individuals name, e-mail address or sensitive data of an organization.
 - E.g. confidential government files get leaked to the public.
 - Steps

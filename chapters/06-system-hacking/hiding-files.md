@@ -43,7 +43,7 @@
 
 - **Horse Pill**, [slides](https://www.blackhat.com/docs/us-16/materials/us-16-Leibowitz-Horse-Pill-A-New-Type-Of-Linux-Rootkit.pdf), [code](https://github.com/r00tkillah/HORSEPILL)
   - Linux rootkit that:
-    1. Infects systems via the initial ramdisk
+    1. Infects systems via the initial RAM disk (drive)
     2. Deceives system owners using container primitives.
 - **GrayFish**
   - Rootkit suspectedly used by NSA in USA in attacks against e.g. Iran.
@@ -55,14 +55,14 @@
   - Downloads other malware on an infected machine from a P2P botnet.
 - **Necurs**
   - Infector and rootkit with worlds largest P2P botnet
-  - Distributes many malwares, including [Locky](https://en.wikipedia.org/wiki/Locky) ransomware.
+  - Distributes many malware, including [Locky](https://en.wikipedia.org/wiki/Locky) ransomware.
   - [Taken down](https://blogs.microsoft.com/on-the-issues/2020/03/10/necurs-botnet-cyber-crime-disrupt/) by Microsoft and its partners in 2019
 - **Grayfish**
   - Developed by Equation Group that's considered to be part of the NSA.
 
 ### Bootkit
 
-- Kernel-mode rootkit that runs everytime computer runs
+- Kernel-mode rootkit that runs every time computer runs
 - Can bypass code signing (kernel-level) in Windows by attaching itself to the master boot record (MBR) of a hard drive
   - Then the rootkit is able to modify boot sequences and other options
   - Allows rootkit to be loaded before the Windows kernel is loaded
@@ -135,7 +135,7 @@
 #### `steghide`
 
 - [Tool](http://steghide.sourceforge.net/index.php) to embed and extract data from JPEG, BMP, WAV and AU.
-- `steghide embed -cf test.jpg -ef hideme.txt`
+- `steghide embed -cf test.jpg -ef hide-me.txt`
   - `-cf`: target file where the data will be hid
   - `-ef`: file to be embedded
   - Asks you for passphrase to encrypt the data
