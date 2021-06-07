@@ -86,14 +86,17 @@
 
 - **Similarities**
   - Both are client-side attacks
-  - Both require need some action of the end user, such as clicking on a link or visiting a website.
+  - Both require need some action of the end user
+    - E.g. clicking on a link or visiting a website
 - **Examples**
-  - CSRF: `https://cloudarchitecture.io/account?new_password=abc123` to involuntarily change password using victim's already logged cookie/session
-  - XSS: `https://cloudarchitecture.io/search?q="><script>alert(document.cookie)</script>` to involuntarily execute client-side code
+  - CSRF: Involuntarily change password using victim's already logged cookie/session
+    - Through `https://cloudarchitecture.io/account?new_password=abc123`
+  - XSS: Involuntarily execute client-side code
+    - `https://cloudarchitecture.io/search?q="><script>alert(document.cookie)</script>`
 - **Differences**
   - XSS executes a malicious script in victims browser
-    - CSRF sends a malicious request on victims behalf.
-  - XSS is generally more serious vulenrability than CSRF
+    - CSRF sends a malicious request on victims behalf
+  - XSS is generally more serious vulnerability than CSRF
     - CSRF often only applies to a subset of actions that a user is able to perform
     - XSS exploit can normally induce a user to perform any action that the user is able to perform
   - CSRF is "one-way" while an attacker can induce the victim to issue an HTTP request without retrieving response
@@ -149,15 +152,16 @@
 - Prevents client to proceed its communication with the server.
 - Easier than TCP/HTTP as no need to worry about sequence numbers or session cookies.
 - Example use-cases
-  - **UDP**: Control victims clock (using [NTP](./../04-enumaration/enumeration-overview.md#ntp) UDP packet) to make a certificate/session invalid
+  - **UDP**: Control victims clock (using [NTP](./../04-enumeration/enumeration-overview.md#ntp) UDP packet) to make a certificate/session invalid
   - **DNS**: Send a false response to DNS lookup to fool the victim into resolving a domain into a malicious IP address (does not work with HTTPs)
 
 #### Network level MITM attack
 
 - Changes the clients default gateway to reroute the sent packets to go through the attacker.
 - Done by either
-  - **ARP spoofing**: where IP address to MAC mapping table (ARP) is altered.
-  - Using **Forged Internet Control Message Protocol (ICMP)**
+  - **ARP spoofing**
+    - Through altering IP address to MAC mapping table (ARP)
+  - **Forged Internet Control Message Protocol (ICMP)**
     - ICMP is an extension of IP to send error messages
     - Attacker sends error messages indicating indicate problems in processing packets through the original connection.
       - Fools the server and client into routing through its path instead.

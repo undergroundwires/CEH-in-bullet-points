@@ -15,7 +15,7 @@
 
 - DNS (Domain Name System)
   - Resolves a domain name to its corresponding IP address when queried.
-  - See also [DNS | DNS enumeration](./../04-enumaration/dns-enumeration.md#dns)
+  - See also [DNS | DNS enumeration](./../04-enumeration/dns-enumeration.md#dns)
 - Attacker compromises a DNS server and change its DNS server to redirect clients to a malicious website.
   - E.g. by configuring DNS server to redirect requests to a rogue DNS server.
 - E.g. user types in legitimate URL in a browser but browser redirects to a fake banking site.
@@ -79,7 +79,7 @@
   - [SQL injection](./../14-sql-injection/sql-injection-overview.md)
   - [Cross-site scripting (XSS)](./../13-web-applications/owasp-top-10-threats.md#cross-site-scripting-xss)
   - [Malware infection](./../07-malware/malware-overview.md)
-  - [DNS cache posioning](./../08-sniffing/sniffing-attacks-overview.md#dns-poisoning)
+  - [DNS cache poisoning](./../08-sniffing/sniffing-attacks-overview.md#dns-poisoning)
   - ...
 
 ## Web server misconfiguration
@@ -144,12 +144,12 @@
    - E.g. GET request where encoded URI does the splitting
 
      ```txt
-       GET http://testsite.com/redir.php?site=%0d%0aContent-
+       GET http://cloudarchitecture.io/redir.php?site=%0d%0aContent-
        Length: %200%0d%0a%0d%0aHTTP/1.1%20200%20OK%0d%0aLast-
        Modified: %20Mon,%2027%20Oct%202009%2014:50:18%20GMT%0d%0aConte
        nt-Length: %2020%0d%0aContent-
        Type: %20text/html%0d%0a%0d%0a<html>deface!</html> HTTP/1.1
-       Host: testsite.com
+       Host: cloudarchitecture.io
        ...
      ```
 

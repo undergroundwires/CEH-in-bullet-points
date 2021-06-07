@@ -4,7 +4,7 @@
 
 - **Surveillance**: • Audio • Camera • Call logs • Location • SMS messages
 - **Financial**: • sending high rate SMS • stealing transaction authentication numbers (TANs) • extortion via ransomware • fake antivirus • making expensive calls
-- **Data theft**: • Account details • Contacts • Call logs • hone number • stealing IMEI
+- **Data theft**: • Account details • Contacts • Call logs • phone number • stealing IMEI
 - **Botnet activity**: • launching DDoS attacks • click fraud • sending SMS
 - **Impersonation**: • SMS redirection, sending e-mail messages, posting to social media
 
@@ -67,8 +67,8 @@
   - Easy through e.g. using prepaid SMS card using fake identity
   - Usually not checked by antiviruses
   - Users are not familiar
-- E.g. "Paypal - your account has been locked"
+- E.g. "PayPal - your account has been locked"
 
 ## Pairing
 
-- Pairing with malicious devices may enable e.g. [Bluesnarfing](./../09-wireless-networks/bluetooth.md#bluesnarfing) and [BlueBugging](./../09-wireless-networks/bluetooth.md#bluebugging)
+- Pairing with malicious devices may enable e.g. [BlueSnarfing](./../09-wireless-networks/bluetooth.md#bluesnarfing) and [BlueBugging](./../09-wireless-networks/bluetooth.md#bluebugging)

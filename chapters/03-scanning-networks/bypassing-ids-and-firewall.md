@@ -8,7 +8,7 @@
 - Also known as ***IP fragment scanning*** or ***IP fragmentation***
 - 📝 Splitting up TCP header to several smaller (fragmented) packets when sending
 - Server then reassembles them once all packets are received.
-- Usually ignored by IDSs as processing them requires a lot of computer resources
+- Usually ignored by IDSes as processing them requires a lot of computer resources
 - Any IP datagram can be fragmented: including UDP, TCP, ICMP, etc.
 - See also [session splicing](./../11-firewalls-ids-and-honeypots/evading-ids.md#session-splicing) for HTTP header variant.
 - Tools
@@ -75,7 +75,7 @@
     - Allows packets to arrive out of order
     - Window size field in TCP header
       - Tells maximum amount of data sender can transmit without waiting for `ACK`
-      - **Windows update packet** is used to negotatiate a different window size.
+      - **Windows update packet** is used to negotiate a different window size.
   - Attacker that uses spoof IPs do not receive window size information
   - If victims receives data packets beyond the window size, they are spoofed packets
 
@@ -98,7 +98,7 @@
 - Egress filtering against insider attacks
   - Blocking outcoming traffic
   - Good against insider attacks where e.g. malware can send information
-- [SYN flooding countermasures](./../13-web-applications/denial-of-service.md#syn-flood-countermeasures)
+- [SYN flooding countermeasures](./../13-web-applications/denial-of-service.md#syn-flood-countermeasures)
 
 ## Encryption
 

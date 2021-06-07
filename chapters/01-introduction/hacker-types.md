@@ -54,7 +54,7 @@
 
 ## Grey hat hackers
 
-- Also known as ***grayhat***, ***gray hat***, ***gray-hat***, ***grey hat***, ***grayhat*** or ***grey-hat*** hackers.
+- Also known as ***grayhat***, ***gray hat***, ***gray-hat***, ***grey hat***, ***greyhat*** or ***grey-hat*** hackers.
 - 📝 Might break laws, regulations and ethical standards but do not have explicitly malicious indent.
 - Middleground; Not as bad as black, not as ethical as white hackers.
 

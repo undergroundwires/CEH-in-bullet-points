@@ -72,7 +72,7 @@
   - See also [Encrypting communication | Cryptography](./../15-cryptography/encrypting-communication.md)
 - Enforce code access security policy
 - Monitor logs
-- Use weebsite change detection System
+- Use website change detection system
   - Check server files with hash comparison and alert if any modifications has happened.
 - Filter traffic to [SSH](./../15-cryptography/tunneling-protocols.md#ssh-secure-shell) server
 - Default passwords and unused default accounts should be changed and disabled respectively.

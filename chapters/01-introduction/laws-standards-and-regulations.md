@@ -59,7 +59,9 @@
 
 - Set of worldwide information security standards
 - Also known as ***ISMS Family of Standards*** or ***ISO27K***
-- **ISO/IEC** = The International Standard for Standardization (ISO) and the International Electrotechnical Commission (IEC)
+- ISO/IEC stands for
+  - "The International Standard for Standardization (ISO)"
+  - and "The International Electrotechnical Commission (IEC)"
 
 ### ISO/IEC 27001:2013
 

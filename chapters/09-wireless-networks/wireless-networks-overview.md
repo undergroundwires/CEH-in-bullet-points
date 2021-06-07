@@ -131,7 +131,7 @@
   - Low-power, low-data-rate, and close-proximity wireless ad hoc networks.
   - Popular IoT connection protocol
 - **802.16 - WiMAX**
-  - Wireless on "stereoids"
+  - Wireless on "steroids"
   - Written for global development of broadband wireless metropolitan area networks.
   - Big range and fast.
 - **Comparing wireless standards**

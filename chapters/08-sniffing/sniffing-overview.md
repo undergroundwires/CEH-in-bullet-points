@@ -52,8 +52,8 @@
 - Sends copy of network packets seen on one switch port (or an entire VLAN) to another port
 - Often used in [Intrusion Detection System](./../11-firewalls-ids-and-honeypots/intrusion-detection-system-(ids)-overview.md)s.
 - Also known as **span port**
-  - In Cisco system, it's commonly refered as Switched Port Analyzer (SPAN)
-- See also [STP attack](./spoofing-attacks.md#stp-spoofing-attack) for an exploatition
+  - In Cisco system, it's commonly referred as Switched Port Analyzer (SPAN)
+- See also [STP attack](./spoofing-attacks.md#stp-spoofing-attack) for an exploitation
 
 ## Sniffer
 

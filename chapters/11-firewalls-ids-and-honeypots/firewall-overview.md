@@ -108,7 +108,7 @@
   - E.g. on [Cisco routers](https://www.cisco.com/c/en/us/support/docs/security/ios-firewall/23602-confaccesslists.html) using `access-list 101 deny tcp any host 100.100.100.1 eq 22`
     - where `101` is sequence number that helps with ordering of the rules
       - the lower the number is the higher priority it gets in the ordering
-    - ACL are prossesed in top down meaning if a condition is met all processing is stopped.
+    - ACL are processed in top down meaning if a condition is met all processing is stopped.
 
 #### Packet inspection
 
@@ -263,4 +263,4 @@
 
 - A network which enables a secure connection to a private network through the Internet.
 - Information is protected by encryption and integrity checks.
-- Can use e.g. [IPSec](./../15-cryptography/tunneling-protocols.md#ipsec)  or [OpenVPN](./../15-cryptography/tunneling-protocols.md#openvpn) tunelling protocol.
+- Can use e.g. [IPSec](./../15-cryptography/tunneling-protocols.md#ipsec) or [OpenVPN](./../15-cryptography/tunneling-protocols.md#openvpn) tunnelling protocol.

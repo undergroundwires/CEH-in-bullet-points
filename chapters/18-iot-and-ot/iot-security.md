@@ -25,7 +25,7 @@
 - OWASP Internet of Things Top Ten was introduced in 2004 and updated in [2018](https://owasp.org/www-pdf-archive/OWASP-IoT-Top-10-2018-final.pdf)
 
 1. **Weak, guessable, or hardcoded passwords**
-   - Use of easily bruteforced, publicly available, or unchangeable credentials
+   - Use of easily brute forced, publicly available, or unchangeable credentials
    - Including [backdoor](./../07-malware/malware-overview.md#backdoor)s in firmware or client software that grants unauthorized access to deployed systems
 2. **Insecure network services**
    - Unneeded or insecure network services running on the device itself

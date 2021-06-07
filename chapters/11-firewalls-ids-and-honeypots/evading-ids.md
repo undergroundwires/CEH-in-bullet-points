@@ -36,7 +36,7 @@
 #### Unicode encoding attack
 
 - Also known as **UTF-8 encoding**
-- Presenting information in an unusal way to confuse the signature-based IDS
+- Presenting information in an unusual way to confuse the signature-based IDS
 - 📝 A very common way to evade IDS
 - E.g. instead of `http://vulneapplication/../../appusers.txt` using `http://vulneapplication/%C0AE%C0AE%C0AF%C0AE%C0AE%C0AFappusers.txt`
 
@@ -49,8 +49,8 @@
 ### Polymorphism
 
 - Using polymorphic shellcode to create unique network patterns to evade signature detection
-- E.g. by encoding payload by XORing and putting the decoder in the start of the payload where the target runs the decoder when it executes the code.
-- Tools include [ADMMutate](https://github.com/K2/ADMMutate): A shellcode mutation engine, can evade NIDS.
+- E.g. by encoding payload by XORing and putting the decoder in the start of the payload where the target runs the decoder when it executes the code
+- Tools include [ADMMutate](https://github.com/K2/ADMMutate): A shellcode mutation engine, can evade NIDS
 
 ## Denial of service
 

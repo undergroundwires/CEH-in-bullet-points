@@ -27,7 +27,7 @@
   | **`AND`** | Results related to both X and Y, google default. | `jobs AND gates` |
   | **`-`** | Exclude a term or phrase | `jobs ‑apple` |
   | **`*`** | Wildcard that will match any word or phrase. | `"Google * my life"` > google changed my life, google runs my life... |
-  | **`(`**, **`)`** | Group multiple terms | `(ipad OR iphone) apple` |
+  | **`(`**, **`)`** | Group multiple terms | `(iPad OR iPhone) apple` |
 
 - E.g. finding passwords: `intext:"please change your" password | code | login file:pdf | doc | txt | docx -github`
   - **`intext`**: in the text of the website
@@ -58,7 +58,7 @@
   1. Queries Google for different filetypes that may have metadata
      - Combining `site:` and `filetype` dorks
   2. Downloads the documents to disk and extracts the metadata of the file
-  3. Parses files using different libraries for metadata (e.g. Hachoir, Pdfminer)
+  3. Parses files using different libraries for metadata (e.g. Hachoir, pdfminer)
 
 ## Online services
 
@@ -76,7 +76,7 @@
 ### Video search engines
 
 - Search video related to target and extract video information
-- E.g. • Youtube • Google Videos
+- E.g. • YouTube • Google Videos
 - Video analysis tools include • YouTube DataViewer • EZGif • VideoReverser.com,
 
 ### Meta data engines

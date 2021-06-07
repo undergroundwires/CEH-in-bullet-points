@@ -68,7 +68,7 @@
 #### OS X applications dynamic library vulnerability
 
 - **Behavior**: OS X looks for dynamic libraries (`dylib`) in multiple directories when loading them.
-- **Vulnerability**: Injecting malicious `dylibs` into one of the primary directories, which will then be loaded instead of the original one.
+- **Vulnerability**: Injecting malicious `dylib`s into one of the primary directories, which will then be loaded instead of the original one.
 
 #### Launch Daemon
 

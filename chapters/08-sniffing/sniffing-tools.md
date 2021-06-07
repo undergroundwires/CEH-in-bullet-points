@@ -49,7 +49,7 @@
 - 📝 On Windows a driver is required:
   - `npcap`: Driver from Nmap developers
   - `WinPcap`: Discontinued driver
-  - [AirPcap](https://support.riverbed.com/content/support/software/steelcentral-npm/airpcap.html): Obselete, propriety USB dongle used when there was no open-source Windows driver
+  - [AirPcap](https://support.riverbed.com/content/support/software/steelcentral-npm/airpcap.html): Obsolete, propriety USB dongle used when there was no open-source Windows driver
 
 ### Wireshark non-root installation
 
@@ -97,7 +97,7 @@
 - Control which packets are displayed
 - Uses search and match operators such as `contains` and `matches`
   - E.g. `http contains hello`: TCP packets containing string "hello"
-- Uses search comparisions
+- Uses search comparisons
   - Such as
     - Equal: `eq` | `==`
     - Not equal: `ne` | `!=`

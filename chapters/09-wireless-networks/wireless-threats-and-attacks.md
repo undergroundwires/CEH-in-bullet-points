@@ -133,7 +133,7 @@
 
 #### Sniffing 4-way handshake
 
-- 4-way handshake is the ceronomy between AP and the device
+- 4-way handshake is the ceremony between AP and the device
 - Vulnerability in WPA and WPA-Personal (WPA-PSK, pre-shared key)
 - During WPA handshake, password is shared in encrypted form (called **PMK (pairwise master key)**)
 - Flow:

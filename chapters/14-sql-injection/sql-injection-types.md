@@ -8,7 +8,7 @@
   - **Database management system-specific SQL injection**
     - Using specific SQL statements to certain database engine.
   - **Compounded SQL injection**
-    - Combining SQL injection with other web applciation attacks such as • insufficient authentication • DDoS attacks • DNS hijacking • XSS.
+    - Combining SQL injection with other web application attacks such as • insufficient authentication • DDoS attacks • DNS hijacking • XSS.
     - E.g. DDoSing through `http://cloudarchitecture.io/azure?id=2 and WAITFOR DELAY '0:0:50'`
   - **Second-order SQL injection**
     - When user-supplied data is stored by the application and later incorporated into SQL queries in an unsafe way.

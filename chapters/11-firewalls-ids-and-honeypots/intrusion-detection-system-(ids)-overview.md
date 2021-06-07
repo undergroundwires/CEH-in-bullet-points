@@ -33,7 +33,7 @@
   | Strength | Sensing attacks from outside | Sensing attacks from inside that NIDS cannot examine |
   | Packet headers | Examines | Does not understand |
   | Host | Independent | Dependent |
-  | Bandwith | In need of | Does not require |
+  | Bandwidth | In need of | Does not require |
   | Performance | Slows down networks where it's installed | Slow down hosts where it's installed |
   | Attack types | Senses network attacks as payload is analyzed | Senses local attacks before they hit the network |
   | False positive rate | High | Low |

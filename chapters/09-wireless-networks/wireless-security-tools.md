@@ -20,7 +20,7 @@
   - Real-time analysis of 802.11a/b/g/n/ac wireless networks
 - [RFProtect Wireless Intrusion Protection](https://www.arubanetworks.com/products/security/wireless-intrusion-protection/)
   - Prevents denial-of-service and man-in-the-middle attacks and mitigates over-the-air security threats.
-- [FruityWifi](http://www.fruitywifi.com)
+- [FruityWiFi](http://www.fruitywifi.com)
   - Open source tool to audit wireless networks
   - Allows the user to deploy advanced attacks by directly using the web interface or by sending messages to it.
 - [Fern Wifi Cracker](https://github.com/savio-code/fern-wifi-cracker)

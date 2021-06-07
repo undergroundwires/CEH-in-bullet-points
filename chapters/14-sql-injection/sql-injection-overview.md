@@ -135,7 +135,7 @@
       - `GET parameter id is 'Generic UNION query (NULL) - 1 to 20 columns' injectable`
     - `--dbs` parameter gets database names e.g. `mysql, phpmyadmin...`
     - `-D <database-name> --tables` parameters lists tables from given tabase name..
-    - `-T <table-name> --columns` gives colums names
+    - `-T <table-name> --columns` gives column names
     - `-C <comma-separated-column-names> --dump` to get columns
   - Can also crack hashes (not as fast as `hashcat`)
 - [jSQL Injection](https://github.com/ron190/jsql-injection)
@@ -153,7 +153,7 @@
 - **Weakness**: The database server runs OS commands
   - Run database with minimal rights
   - Disable OS commands like `xp_cmdshell` (for shell access)
-    - Invoking `xp_cmdshell` spwans a Windows command shell with input string passed to it for execution
+    - Invoking `xp_cmdshell` spawns a Windows command shell with input string passed to it for execution
     - Providing local system level access to the server.
 - **Weakness**: Using privileged account to connect to the database
   - Monitor DB traffic using an IDS

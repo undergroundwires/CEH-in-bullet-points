@@ -23,7 +23,7 @@
 - ![Hardware keylogger](img/hardware-keylogger.jpg)
 - Look like USB drives and are designed to record keystrokes, which are stored on the device.
 - Placed between a keyboard plug and USB socket
-- Cannot be detected by antispyware or antivirus programs.
+- Cannot be detected by anti-spyware or antivirus programs.
 - Discoverable as they have to be physically placed onto a target's machine
 
 #### Hardware keylogger types
@@ -51,12 +51,15 @@
 - **Kernel keylogger**
   - Designed to exist on a kernel level and act as a keyboard device driver
   - Allows it to record everything that is typed on the keyboard
-- **Rootkit keylogger**: forged Windows device driver which records keystrokes
+- **Rootkit keylogger**
+  - Forged Windows device driver which records keystrokes
 - **Device driver keylogger**
   - Designed to replace the driver that has the keylogging functionality
   - Logs the keystrokes, and send the file to a remote location
-- **Hypervisor-based keylogger**: designed to work within a malware hypervisor that is operating on the OS
-- **Form grabbing based keylogger**: designed to record web browsing when the Submit event is triggered.
+- **Hypervisor-based keylogger**
+  - Designed to work within a malware hypervisor that is operating on the OS
+- **Form grabbing based keylogger**
+  - Designed to record web browsing when the Submit event is triggered
 
 ## Spyware
 

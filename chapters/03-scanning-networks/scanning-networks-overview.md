@@ -33,10 +33,10 @@
   | 21 | TCP | [FTP (File Transfer Protocol)](./../15-cryptography/encrypting-communication.md#ftp-file-transfer-protocol) |
   | 22 | TCP | [SSH (Secure Shell)](./../15-cryptography/tunneling-protocols.md#ssh-secure-shell) |
   | 23 | TCP | [Telnet](banner-grabbing.md#telnet) |
-  | 25 | TCP | [SMTP (Simple Mail Transfer Protocol)](./../04-enumaration/enumeration-overview.md#smtp) |
-  | 53 | TCP/UDP | [DNS (Domain Name Server)](./../04-enumaration/dns-enumeration.md#dns) |
+  | 25 | TCP | [SMTP (Simple Mail Transfer Protocol)](./../04-enumeration/enumeration-overview.md#smtp) |
+  | 53 | TCP/UDP | [DNS (Domain Name Server)](./../04-enumeration/dns-enumeration.md#dns) |
   | 80 | TCP | HTTP (Hypertext Transfer Protocol) ❗ HTTP/3 will run over UDP |
-  | 123 | TCP | [NTP (Network Time Protocol)](./../04-enumaration/enumeration-overview.md#ntp) |
+  | 123 | TCP | [NTP (Network Time Protocol)](./../04-enumeration/enumeration-overview.md#ntp) |
   | 443 | TCP/UDP | HTTPS | Hypertext Transfer Protocol Secure (HTTPS) |
   | 500 | TCP/UDP | [IKE/IPSec (Internet Key Exchange / IPSec)](./../15-cryptography/tunneling-protocols.md#ipsec) |
   | 631 | TCP/UDP | IPP (Internet Printing Protocol) |
@@ -44,12 +44,12 @@
   | 9100 | TCP/UDP | AppSocket/JetDirect (HP JetDirect, Printer PDL Data Stream) |
 
 - Read more on [IANA ports list](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.txt)
-- See also • [Port monitoring | Malware analysis](./../07-malware/malware-analysis.md#port-monitoring) • [Common ports and services to enumerate | Enumeration](./../04-enumaration/enumeration-overview.md#common-ports-and-services-to-enumerate)
+- See also • [Port monitoring | Malware analysis](./../07-malware/malware-analysis.md#port-monitoring) • [Common ports and services to enumerate | Enumeration](./../04-enumeration/enumeration-overview.md#common-ports-and-services-to-enumerate)
 
 ## Drawing and mapping out network topologies
 
 - Useful for identifying and understanding the topology of the target network.
-  - The diagram can tell the attacker how firewalls, IDSs, routers, and other devices are arranged in the network
+  - The diagram can tell the attacker how firewalls, IDSes, routers, and other devices are arranged in the network
 - Information can be used for vulnerability discovery and exploit.
 - A popular tool is *`zenmap`*: A GUI for [`nmap`](./scanning-tools.md#nmap)
   - ![zenmap screenshot](img/zenmap.png)

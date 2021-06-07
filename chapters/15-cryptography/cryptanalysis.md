@@ -11,7 +11,7 @@
 - Applicable to block ciphers and stream ciphers.
 - Given enough pairs of plaintext and corresponding ciphertext, key can be obtained
 - Discovered by By Matsui and Yamagishi in 1992
-- Attacker indentifies the linear relation between some bits of the plaintext, some bits of the ciphertext and some bits of the unknown key.
+- Attacker identifies the linear relation between some bits of the plaintext, some bits of the ciphertext and some bits of the unknown key.
 
 ### Differential cryptanalysis
 
