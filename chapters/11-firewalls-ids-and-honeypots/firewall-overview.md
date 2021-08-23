@@ -32,7 +32,7 @@
 
 ### Screened subnet firewalls
 
-- Screen subnet is also known as **DMZ** or **perimeter network.**
+- Screen subnet is also known as **DMZ** or **perimeter network**.
 - Used to secure servers that are accessible from the internet.
 - Consists of three zones:
   1. External (e.g. to internet)
@@ -40,7 +40,7 @@
      - Placed in-between internal (trusted) and external (untrusted) network
      - Usually where bastions are placed
   3. Private (to internal network e.g. intranet)
-- ![Screened subnet firewall architecture](img/screened-host-firewall.png)
+- ![Screened subnet firewall architecture](img/screened-subnet-firewall.png)
 - Two routers
   1. External router separating traffic from a perimeter network (DMZ)
   2. Internal router separating perimeter from internal network
