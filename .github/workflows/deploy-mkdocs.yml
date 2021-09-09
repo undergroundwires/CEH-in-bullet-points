@@ -10,14 +10,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
-        with:
-          python-version: 3.x
-      - run: pip install mkdocs-material 
-      - name: Copy Readme
-        run: |
-            cp README.md chapters/      
-      - name: Remove chapters prefix from README links.
-        run: |
-            sed -ire "s;./chapters/;;g" chapters/README.md
-
+      - run: pip install mkdocs-material mkdocs-literate-nav mkdocs-gen-files
       - run: mkdocs gh-deploy --force
