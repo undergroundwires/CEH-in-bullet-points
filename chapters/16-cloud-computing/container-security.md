@@ -85,7 +85,7 @@
   - E.g. Windows Host Compute Service Shim library had [remote code execution](https://nvd.nist.gov/vuln/detail/CVE-2018-8115) vulnerability
   - E.g. [a bug](https://nvd.nist.gov/vuln/detail/CVE-2018-9862) allowed root privilige escalation using `docker` command
 - Creating malicious container on compromised host system
-  - E.g. [crypto-miner containers that were running near Russian nuclear warzone](ttps://www.fortinet.com/blog/threat-research/yet-another-crypto-mining-botnet)
+  - E.g. [crypto-miner containers that were running near Russian nuclear warzone](https://www.fortinet.com/blog/threat-research/yet-another-crypto-mining-botnet)
 - Exploiting orchestration tool
   - Can be e.g. Kubernetes, OpenShift, Cloud Foundry or other (cloud) layer running containers.
   - See [Kubernetes vulnerabilities on CVE](https://www.cvedetails.com/vulnerability-list/vendor_id-15867/product_id-34016/Kubernetes-Kubernetes.html)

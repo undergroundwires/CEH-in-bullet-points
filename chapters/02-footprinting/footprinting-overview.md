@@ -88,7 +88,7 @@
 - 📝 **[Maltego](https://www.maltego.com/)**
   - Proprietary software for open-source intelligence (OSINT)
   - Provides graphical link for investigative tasks.
-- **[Recon-ng](The Recon-ng Framework)**
+- **[Recon-ng (The Recon-ng Framework)](https://github.com/lanmaster53/recon-ng)**
   - Open source CLI tools for open source web-based reconnaissance
 - **[FOCA](https://github.com/ElevenPaths/FOCA)**
   - Fingerprinting Organizations with Collected Archives

@@ -67,7 +67,7 @@
 - **Encrypting files before using FTP**
   - Does not protect user password, or prevent man in the middle from downloading encrypted files
 - **SFTP (SSH File Transfer Program)** | port: 22
-  - Uses [SSH](/tunneling-protocols.md#ssh-secure-shell) for authentication and data transport mechanism
+  - Uses [SSH](./tunneling-protocols.md#ssh-secure-shell) for authentication and data transport mechanism
 - **FTP over SSH**
   - SSH connection must be established between the two systems before the FTP connection is established
 - **FTP over [IPSec](./tunneling-protocols.md#ipsec)**
