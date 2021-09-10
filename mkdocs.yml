@@ -1,7 +1,34 @@
 site_name: CEH-IN-BULLET-POINTS
+
 theme:
   name: material
+  language: 'en'
+  palette:
+
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: deep purple
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+        
+  font:
+    text: Barlow
+    code: Roboto Mono
+    
 docs_dir: chapters
+
 plugins:
   - gen-files:
       scripts:
