@@ -1,0 +1,66 @@
+name: Generate PDF book (mdpdf)
+
+on:
+  push:
+    branches: [ master ]
+    paths-ignore:
+       - '.github/workflows/deploy-mkdocs.yml'
+  pull_request:
+    branches: [ master ]
+    paths-ignore:
+       - '.github/workflows/deploy-mkdocs.yml'
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install emoji fonts & renderer
+        run: |
+            sudo apt-add-repository ppa:eosrei/fonts
+            sudo apt-get update
+            sudo apt-get install fonts-twemoji-svginot pdftk
+
+      - name: Install node
+        uses: actions/setup-node@v2
+
+      - name: Install node dependencies
+        run: npm install -g mdpdf
+      - uses: actions/checkout@v2
+
+      # At the moment there's an issue with links - it's not possible to create link that would point to same document 
+      - name: Replace All URLs with links that point to website
+        run: |
+          export CHAPTERS=($(cat README.md | grep -oEi '(\.\/chapters.*)\)' | sed 's/)$//g'))
+            for (( i=0; i<${#CHAPTERS[@]}; i++ ))
+            do
+                sed -ire "s;[0-9a-zA-Z\.\/\-\)\(]+\#;\#;g" ${CHAPTERS[$i]}
+            done
+
+      - name: Convert markdown to PDF
+        run: |
+          mkdir res
+          export CHAPTERS=($(cat README.md | grep -oEi '(\.\/chapters.*)\)' | sed 's/)$//g'))
+          for (( i=0; i<${#CHAPTERS[@]}; i++ ))
+          do
+              FILE_NAME=$(printf "res/%03d.pdf" ${i})
+              mdpdf --format A5 "${CHAPTERS[$i]}" "${FILE_NAME}"
+          done
+
+          mdpdf --format A5 README.md README.pdf
+
+      - name: Merge PDF into single document
+        run: |
+          pdftk README.pdf res/*.pdf cat output ceh-in-bullet-points-A5.pdf
+
+      - name: (ENV) Get current date
+        id: date
+        run: echo "CURR_DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: CEH-in-bulletpoints-A5-${{env.CURR_DATE}}
+          path: ceh-in-bullet-points-A5.pdf        
