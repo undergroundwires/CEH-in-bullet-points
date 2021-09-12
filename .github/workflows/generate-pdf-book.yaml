@@ -1,4 +1,4 @@
-name: Generate PDF book (mdpdf)
+name: Generate PDF book (Size A4)
 
 on:
   push:
