@@ -1,6 +1,11 @@
 # Certified ethical hacker in bullet points
 
 [![Quality checks status](https://github.com/undergroundwires/CEH-in-bullet-points/workflows/Quality%20checks/badge.svg)](https://github.com/undergroundwires/CEH-in-bullet-points/actions)
+
+[![Generate PDF book (Size A4)](https://github.com/undergroundwires/CEH-in-bullet-points/actions/workflows/generate-pdf-book-A4.yaml/badge.svg)](https://github.com/undergroundwires/CEH-in-bullet-points/actions/workflows/generate-pdf-book-A4.yaml)
+
+[![Generate PDF book (Size A5)](https://github.com/undergroundwires/CEH-in-bullet-points/actions/workflows/generate-pdf-book-A5.yaml/badge.svg)](https://github.com/undergroundwires/CEH-in-bullet-points/actions/workflows/generate-pdf-book-A5.yaml)
+
 [![GitHub sponsors](https://undergroundwires.dev/img/badges/donate/flat.svg)](https://undergroundwires.dev/donate?project=Azure-in-bullet-points)
 
 - This repo contains study notes for Certified Ethical Hacker exam.
