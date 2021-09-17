@@ -1,0 +1,30 @@
+.markdown-body {
+  color: rgb(0, 0, 0);
+}
+
+.markdown-body a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body blockquote {
+  color: rgb(65, 65, 65);
+}
+
+.markdown-body kbd {
+  color: rgb(56, 56, 56);
+}
+
+.markdown-body .pl-c {
+  color: #969896;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #333;
+}
