@@ -49,7 +49,7 @@ jobs:
               mdpdf --style=.github/cidc/pdf.css --format=A5 --border=5 "${CHAPTERS[$i]}" "${FILE_NAME}"
           done
 
-          mdpdf--style=.github/cidc/pdf.css  --format=A5 --border=5  README.md README.pdf
+          mdpdf --style=.github/cidc/pdf.css  --format=A5 --border=5  README.md README.pdf
 
       - name: Merge PDF into single document
         run: |
