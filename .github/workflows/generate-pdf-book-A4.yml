@@ -1,14 +1,14 @@
-name: Generate PDF book (mdpdf)
+name: Generate PDF book (Size A4)
 
 on:
   push:
     branches: [ master ]
     paths-ignore:
-       - '.github/workflows/deploy-mkdocs.yml'
+       - '.github/workflows/*.yml'
   pull_request:
     branches: [ master ]
     paths-ignore:
-       - '.github/workflows/deploy-mkdocs.yml'
+       - '.github/workflows/*.yml'
 
   workflow_dispatch:
 

@@ -2,8 +2,14 @@ name: deploy-mkdocs site
 
 on:
   push:
-    branches: 
-      - master
+    branches: [ master ]
+    paths-ignore:
+       - '.github/workflows/*.yml'
+  pull_request:
+    branches: [ master ]
+    paths-ignore:
+       - '.github/workflows/*.yml'
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
