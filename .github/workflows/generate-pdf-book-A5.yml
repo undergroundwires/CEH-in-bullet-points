@@ -46,10 +46,10 @@ jobs:
           for (( i=0; i<${#CHAPTERS[@]}; i++ ))
           do
               FILE_NAME=$(printf "res/%03d.pdf" ${i})
-              mdpdf --style=../pdf.css --format=A5 --border=5 "${CHAPTERS[$i]}" "${FILE_NAME}"
+              mdpdf --style=.github/cidc/pdf.css --format=A5 --border=5 "${CHAPTERS[$i]}" "${FILE_NAME}"
           done
 
-          mdpdf--style=../pdf.css  --format=A5 --border=5  README.md README.pdf
+          mdpdf--style=.github/cidc/pdf.css  --format=A5 --border=5  README.md README.pdf
 
       - name: Merge PDF into single document
         run: |
