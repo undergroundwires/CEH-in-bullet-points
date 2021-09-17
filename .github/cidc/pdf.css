@@ -3,8 +3,8 @@
 }
 
 .markdown-body a {
-  color: #333333;
-  text-decoration: none;
+  color: #000000;
+  text-decoration: underline;
 }
 
 .markdown-body h6 {
