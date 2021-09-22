@@ -30,5 +30,8 @@ theme:
 docs_dir: chapters
 
 plugins:
+  - gen-files:
+      scripts:
+        - gen_index.py
   - literate-nav:
       nav_file: README.md
