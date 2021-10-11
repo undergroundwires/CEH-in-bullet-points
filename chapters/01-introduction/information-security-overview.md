@@ -47,13 +47,15 @@
 - Also known as • ***zero-day attack*** • ***0-day attack*** • ***0 day attack***
 - Exploiting previously unknown vulnerabilities before patch is released.
 - **Zero day vulnerability**
-  - Hole in software that is unknown to the vendor and newly discovered.
-- E.g. Spectre & Meltdown
-  - Vulnerabilities in AMD and Intel CPUs
-  - Can be exploited to elevate the privileges in the given system.
-  - Still exists but no longer a zero day.
-  - Affected all cloud providers, they needed to run firmware updates, updates provided by Intel that caused delays.
-- Steps:
+  - Hole in software that is either [1]
+    - Unknown to the one that's interested in mitigating in (e.g. vendor)
+    - Known but patch has not been developed
+  - Targeted attacks often include zero-day vulnerabilities [3]
+  - ❗ A vulnerability is not zero day once it's disclosed and patched
+- **Zero-day exploit**
+  - Taking advantage of zero-day vulnerabilities
+  - Often done by using malware [3]
+- Flow
   1. Attacker discovers the vulnerability
   2. Attacker exploits vulnerability
   3. Attack happens (called day zero)
@@ -61,9 +63,22 @@
   5. Patch is created
      - Sometimes vendor may not patch it e.g. if software is outdated or has no support.
   6. Patch is applied
-     - Sometimes they're not! E.g. home routers has vulnerabilities that has been known for years as ISPs do not usually configure routers after setup
-     - Timeframe between patch is created and applied is used by malicious hackers to maximum extend.
+     - ❗ Sometimes they're not!
+       - E.g. home routers has vulnerabilities that has been known for years as ISPs do not usually configure routers after setup
+     - 💡 Time frame between patch is created and applied is used by malicious hackers to maximum extend.
        - Many times corporations are slower to react which causes harm.
+- **Window of vulnerability (WOV)**
+  - Time from vulnerability is discovered until most vulnerable systems are patched [1]
+  - Often measured in days e.g. 28 days.
+- E.g. [Spectre](./../06-system-hacking/escalating-privileges.md#spectre-vulnerability) & [Meltdown](./../06-system-hacking/escalating-privileges.md#meltdown-vulnerability)
+  - Vulnerabilities in AMD and Intel CPUs
+  - Can be exploited to elevate the privileges in the given system.
+  - Still exists but no longer a zero day.
+  - Affected all cloud providers, they needed to run firmware updates, updates provided by Intel that caused delays.
+
+[1]: https://en.wikipedia.org/wiki/Zero-day_(computing)
+[2]: https://us.norton.com/internetsecurity-emerging-threats-how-do-zero-day-vulnerabilities-work.html
+[3]: https://blog.trendmicro.com/trendlabs-security-intelligence/common-misconceptions-it-admins-have-on-targeted-attacks/
 
 ### Daisy chaining
 
