@@ -126,7 +126,7 @@
   | 0 | 0 | 0 |
   | 0 | 1 | 1 |
   | 1 | 0 | 1 |
-  | 0 | 0 | 0 |
+  | 1 | 1 | 0 |
 
 - ❗ If the key chosen is actually smaller than the data, the cipher will be vulnerable to frequency attacks
 - Uses "⊕" that denotes the exclusive disjunction (XOR) operation
