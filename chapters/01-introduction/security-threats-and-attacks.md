@@ -101,7 +101,7 @@
 ### Attack vectors
 
 - Attack vector = Means by which hackers deliver a payload to systems and networks
-- [Cloud computing threats](./../16-cloud-computing/cloud-security.md#cloud-computing-threats) such as data breach and loss.
+- [Cloud computing threats](./../16-cloud-computing/cloud-security.md#cloud-computing-risks-and-threats) such as data breach and loss.
 - [IoT threats](./../18-iot-and-ot/iot-security.md#iot-threats) usually caused by insecure devices and hardware constraints (battery, memory, CPU etc.)
 - [Ransomware](../07-malware/malware-overview.md#ransomware): Restricts access to your files and requires payment to be granted access
 - [Mobile threats](./../17-mobile-platforms/mobile-attacks.md#mobile-threats)
