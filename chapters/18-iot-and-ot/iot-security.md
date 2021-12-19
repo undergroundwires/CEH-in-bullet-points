@@ -59,6 +59,19 @@
 
 ## IoT attacks
 
+## IoT attack surface areas
+
+- **Device memory**: Credentials
+- **Ecosystem access control**: Implicit trust between components
+- **Device physical interfaces**: Privilege escalation, CLI
+- **Device web interface**: SQL injection, XSS
+- **Device firmware**: Sensitive data exposure, hardcoded credentials
+- **Device network services**: Unencrypted/poorly encrypted services.
+- **Administrative interface**: SQL Injection, XSS
+- **Local data storage**: Data encrypted with discovered keys, lack of integrity checks.
+
+## IoT attack types
+
 - **Access control**
   - E.g. remote access control or gaining access to administration panels
 - **BlueBorn Attack**
@@ -72,17 +85,25 @@
     - Reconstruct a visual and textual representation of network information to support real-world Internet of Thingl
 - **HVAC attack**
   - Takes place when one hacks IoT devices in order to shut down air conditioning services.  
+  - Can allow access to a corporate systems.
 - [Backdoor](./../07-malware/malware-overview.md#backdoor) (not just IoT related)
 - [Exploit kits](../07-malware/malware-overview.md#exploit-kit)
+  - Malicious scripts used to exploit poorly patched devices.
 - [Replay attack](./../06-system-hacking/cracking-passwords-overview.md#replay-attack)
+  - Attackers send intercepted messages to target device to perform DoS.
+  - See also [SDR-based attacks](#sdr-based-attacks)
 - [Ransomware](./../07-malware/malware-overview.md#ransomware) attack
+  - Type of malware that uses encryption to block user's access to his/her device.
 - [Privilege escalation](./../06-system-hacking/escalating-privileges.md)
 - [Side channel attack](./../16-cloud-computing/cloud-security.md#side-channel-attacks)
+  - Attackers extract info about encryption keys by observing the emission signals (side channels) from IoT devices.
 - [Web application attacks](./../13-web-applications/hacking-web-applications.md), [web server attacks](./../12-web-servers/web-server-threats-and-attacks.md)
 - [Cloud computing attacks](./../16-cloud-computing/cloud-security.md#cloud-computing-attacks)
 - [Mobile application threats](./../17-mobile-platforms/mobile-attacks.md)
 - [DoS / DDoS](./../13-web-applications/denial-of-service.md)
-- Forged malicious devices
+  - Can be done by converting devices into an army of botnet.
+- **Forged malicious devices**
+  - Attackers replace authentic IoT devices  with malicious device.
 - Resetting to an insecure state
 - Removal of storage media
 - Firmware attack
@@ -92,7 +113,8 @@
 - Malicious updates
 - Insecure APIs
 - Eavesdropping
-- Sybil attack
+- **Sybil attack**
+  - Attacker uses multiple forged identities to create strong illusion of traffic congestion.
 
 ### Rolling code attack
 
@@ -101,7 +123,21 @@
 - Attacker capture signal from transmitter device, simultaneously blocking the receiver to receive the signal
 - Attacker uses the signal to gain unauthorized access
 - E.g. stealing car with captured signal
+  - Attacker jams and sniffs the signal to obtain the code transferred to vehicle's receiver
 - Tools include [HackRF One](https://greatscottgadgets.com/hackrf/one/) hardware tool.
+
+### SDR-based Attacks
+
+- Attackers use Software Defined Radio (SDR) to examine the communication signals in the IoT network and sends spam content or texts to the interconnected devices.
+- Can also change the transmission and reception of signals between the devices.
+- Includes
+  - **Replay attack**
+    - The attacker obtains frequency used for data sharing between devices and captures data.
+  - **Cryptanalysis Attack**
+    - Attacker uses same procedure as replay attack and also reverse engineering of the protocol to capture the original signal.
+  - **Reconnaissance attack**
+    - Attacker obtains info about the target device from the device's specification.
+    - See also [information gathering](#information-gathering)
 
 ### Firmware extraction
 
@@ -116,16 +152,43 @@
 - Allows pushing firmware updates
 - Enables usage of devices to other devices in the network
 
+### Fault injection attacks
+
+- Also known as **perturbation attacks**
+- Occur when a perpetrator injects any faulty or malicious program into the system to compromise the system security.
+- **Optical, Electro Magnetic Fault Injection (EMFI), Body Bias Injection (BBI)**
+  - Injection using projecting lasers and electromagnetic pulses.
+- **Power/clock/reset/glitching**
+  - Injections into power supply and clock network of the chip.
+- **Frequency/voltage tampering**
+  - Tampering with clock frequency of the chip
+- **Temperature attacks**
+  - Attackers alter the temp for the operating the chip.
+
+### DNS rebinding
+
+- Done by compromising browsers as traffic tunnels to exploit private services.
+- Done through malicious script in a webpage to manipulate resolution of domain names.
+- Can help to gain access over the target's router using a malicious JavaScript code injected on a web page.
+  - After that, an attacker can assault any device activated using the default password.
+
 ## Hacking Methodology
 
 ### Information gathering
 
-- IP address
-- Running protocols
-- Open ports
-- Type of device
-- Vendor
-- [Shodan](https://www.shodan.io/) is a helpful search engine for IoT
+- Also known as **IoT footprinting**
+- Includes collecting [information](./../02-footprinting/footprinting-overview.md#footprinting-information) regarding target IoT devices
+- Information can include e.g. IP address,running protocols, vendor, type of device, hostname, ISP, device location, banner of the target IoT device.
+- Can involve using
+  - [IoT search engines](./../02-footprinting/search-engines-and-online-resources.md#iot-search-engines) to find manufacturer or device information.
+  - Searching for hardware registrations in regulating bodies
+    - Can help to find information regarding compliance standards, user Manuals, documentation, wireless operating frequency, and photos
+    - E.g.
+      - 📝 [FCC ID search](https://fccid.io/) by "United States Federal Communications Commission registry"
+      - [IC ID Search](https://industrycanada.co/) by "Industry Canada (IC)"
+      - [KCC identifier search](https://fccid.io/KCC.php) by  Korean Communications Commission
+      - [CMII/CMIIT search](https://fccid.io/CMIIT-ID.php) by China Ministry of Industry and Information Technology
+- See also [Footprinting](./../02-footprinting/footprinting-overview.md)
 
 ### Vulnerability scanning
 
@@ -156,15 +219,30 @@
 - Clearing logs
 - Covering tracks
 
-## Countermeasures
+## IoT attack countermeasures
 
-- Firmware update
-- Block unnecessary ports
-- Disable telnet as it's insecure protocol
-- Use encrypted communication (SSL/TLS)
-- Use strong password
-- Encrypt drives
-- Periodic assessment of devices
-- Secure password recovery
-- Two-Factor Authentication
-- Disable UPnP
+- **Encrypt**
+  - Use encrypted communication (SSL/TLS)
+  - Implement end-to-end encryption
+  - Use VPN architecture
+  - Encrypt drives
+- **Password policies**
+  - Use strong password
+  - Ensure secure password recovery
+- **Update devices**
+  - Patch vulnerabilities
+  - Firmware update
+- **Restrict access**
+  - Prevent the devices against physical tampering
+  - Allow only trusted IP's to access device from internet
+  - Implement strong authentication mechanisms.
+    - E.g. two-Factor Authentication
+  - Use Lockout feature to disable multiple login attempts
+- **Monitor**
+  - Implement IPS/IDS in the network
+  - Periodic assessment of devices
+- **Disable unused or unnecessary ports and services**
+  - Disable UPnP port on routers
+  - Monitor traffic on port 48101 for infected traffic
+  - Disable telnet as it's insecure protocol
+  - Disable Guest or Demo user accounts

@@ -135,7 +135,7 @@
     2. [Mobile attack vectors](./chapters/17-mobile-platforms/mobile-attack-vectors.md)
     3. [Mobile attacks](./chapters/17-mobile-platforms/mobile-attacks.md)
 18. IoT and OT
-    1. [IoT hacking](./chapters/18-iot-and-ot/iot-hacking.md)
+    1. [IoT overview](./chapters/18-iot-and-ot/iot-overview.md)
     2. [IoT security](./chapters/18-iot-and-ot/iot-security.md)
 19. [Exam readiness](chapters/19-exam-readiness/exam-readiness.md)
 
