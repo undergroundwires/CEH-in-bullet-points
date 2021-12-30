@@ -71,7 +71,7 @@
 - Used to indicate a particular connection state or provide additional information
 - Size of each flag is 1 bit being either `0` or `1`
 - 📝 Flag types
-  - **Sequence number (`SYN`)**
+  - **Synchronization (`SYN`)**
     - Also known as **synchronization** flag.
     - Synchronize sequence numbers
     - First step of connection establishment (3-way handshake)
