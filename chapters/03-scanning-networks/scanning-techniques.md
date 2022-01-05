@@ -1,6 +1,11 @@
 # Scanning techniques
 
-- Used to identify open ports.
+- Used to
+  - Identify open ports also i.e. **port scanning**
+  - Identify which hosts or are alive i.e. **host discovery**
+- Same techniques can be used for both port scanning and host scanning
+  - But can require different tools or commands
+  - See: Nmap [port scanning](./scanning-tools.md#-s-port-scan-options) vs [host discovery](./scanning-tools.md#-p-ping-host-discovery-options) commands
 
 ## Techniques per protocol
 
@@ -30,7 +35,7 @@
 
 - **Echo**
   - Sends `ICMP ECHO` (type 8) expecting `ICMP ECHO` reply
-  - Also known as ***ICMP echo scanning***
+  - Also known as ***ICMP echo scanning*** or [***ICMP ping sweep***](#icmp-ping-sweep)
   - 📝 **Tools**
     - Nmap: `-PE`
     - hping: `hping3 -1 <target>`
@@ -45,7 +50,7 @@
     - Nmap: `-PM`
     - hping: `hping3 -1 <target> --icmptype 17`
 
-#### Ping sweep
+#### ICMP ping sweep
 
 - Also called **ICMP sweep** or **ICMP echo scanning**
 - 📝 Used to determine active hosts in target network range.
@@ -60,7 +65,7 @@
 
 #### TCP connect
 
-- Also known as ***full open scan***
+- Also known as **full open scan** or **TCP Connect() scan**
 - Used for detecting open ports upon the completion of the three-way handshake.
 - Works by establishing a full connection and then dropping it by sending a RST packet.
   - ![TCP connect scan](img/tcp-connect.png)
@@ -212,7 +217,7 @@
 
 #### UDP Scanning
 
-- Also known as ***UDP ping***, ***UDP/ICMP error scan*** or ***UDP ICMP_PORT_UNREACHABLE scan***
+- Also known as ***UDP ping***, ***UDP/ICMP error scan***, ***UDP port scan*** or ***UDP ICMP_PORT_UNREACHABLE scan***
 - Exploits UDP behavior where the receiver sends an ICMP packet with error code when a port is unreachable.
 - No response is interpreted as "open" or "filtered" behind firewall
 - **Pros**

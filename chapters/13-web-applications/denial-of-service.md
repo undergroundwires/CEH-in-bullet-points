@@ -124,15 +124,20 @@
   - Windows 3.1x, Windows 95 and Windows NT
   - Linux prior to versions 2.0.32 and 2.1.63
 
-##### RST attack
+##### `RST` attack
 
 - Also known as **TCP reset attack**
 - Attacker sends TCP packets with the `RST` flag set to `1` to host A, host B, or both using spoofed IPs
   - Causes termination of valid TCP connection between the two hosts.
 - Setting `RST` flag
-  - Indicates that receiving computer should immediately kills the TCP connection
-  - If computer A does not know that B has killed the communication (e.g. if computer B has crashed), it still sends the packets.
-    - Computer B in that case can send `RST` packet to computer B.
+  - Indicates that receiving computer should immediately kill the TCP connection
+  - An real-life scenario
+    1. Two computers (computer A and computer B) communicate with each other
+    2. Computer B kills the communication without knowledge of computer A
+       - E.g. computer B has crashed
+    3. Computer A continues to send packets to computer B
+    4. Computer B sends `RST` packet to computer A to kill the communication
+  - See also: [TCP flags](./../03-scanning-networks/tcpip-basics.md#tcp-flags)
 - 🤗 Used often for internet censorship e.g. • [The Great Firewall of China](https://en.wikipedia.org/wiki/Great_Firewall) • [Iranian Internet censors](https://en.wikipedia.org/wiki/Internet_censorship_in_Iran#Deep_packet_inspection).
 
 ### Application layer DoS attacks

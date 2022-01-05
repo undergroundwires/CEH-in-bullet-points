@@ -37,7 +37,7 @@
 
 1. **Gather information**
    1. Get victim IP address, e.g. `192.168.122.183`
-      - e.g. through host discovery using `nmap` e.g. `nmap -sn 192.168.0.0`
+      - E.g. through [host discovery using `nmap`](./../03-scanning-networks/scanning-tools.md#-p-ping-host-discovery-options) e.g. `nmap -sn 192.168.0.0/24`
    2. Get default gateway IP, e.g. `192.168.122.1`
       - Usually IP of the machine ending with `.1`
       - Usually same for everyone on same network

@@ -71,7 +71,7 @@
 - Used to indicate a particular connection state or provide additional information
 - Size of each flag is 1 bit being either `0` or `1`
 - 📝 Flag types
-  - **Sequence number (`SYN`)**
+  - **Synchronization (`SYN`)**
     - Also known as **synchronization** flag.
     - Synchronize sequence numbers
     - First step of connection establishment (3-way handshake)
@@ -88,7 +88,9 @@
   - **Reset (`RST`)**
     - `1` aborts the connection in response
     - Sent from the receiver to the sender when a packet is sent to a particular host that was not expecting it.
-    - Also used to determine [whether a port is open](./scanning-techniques.md#rfc-793-scans)
+    - Also used as
+      - DDoS attack, see [`RST` attack](./../13-web-applications/denial-of-service.md#rst-attack)
+      - Scanning technique, see [RFC 793 scans](./scanning-techniques.md#rfc-793-scans)
 
 ### Finish (`FIN`) vs Reset (`RST`)
 

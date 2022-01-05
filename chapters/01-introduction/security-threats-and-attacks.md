@@ -59,7 +59,9 @@
 - Vulnerabilities include
   - Bugs (as it's a big codebase)
   - Buffer overflow
-  - Unpatched operating systems (can lead to e.g. [zero day](./information-security-overview.md#zero-day-attack) vulnerabilities)
+  - Unpatched operating systems
+    - Can lead to successful leads using already known vulnerabilities
+    - 🤗 E.g. Microsoft had already patched the [EternalBlue vulnerability](https://en.wikipedia.org/wiki/EternalBlue) that NSA developed before it was leaked to public. However, many systems still remained unpatched due to users not updating their systems. So the same vulnerability on unpatched systems were still successfuly exploited by first [WannaCry ransomware](https://en.wikipedia.org/wiki/WannaCry_ransomware) that compromised hundreds of thousands computers, and then by [NotPetya malware](https://en.wikipedia.org/wiki/Petya_(malware)). [1]
 - Attacks include
   - Exploiting network protocol implementations
   - [Authentication attacks](./../13-web-applications/hacking-web-applications.md#authentication-attacks)
@@ -67,6 +69,8 @@
   - Breaking filesystem security
 - 💡 Secure OS is an OS that's updated, monitored, regulated as frequently as possible.
 - See also [banner grabbing](./../03-scanning-networks/banner-grabbing.md)
+
+[1]: https://en.wikipedia.org/wiki/EternalBlue
 
 #### Misconfiguration attacks
 
@@ -97,7 +101,7 @@
 ### Attack vectors
 
 - Attack vector = Means by which hackers deliver a payload to systems and networks
-- [Cloud computing threats](./../16-cloud-computing/cloud-security.md#cloud-computing-threats) such as data breach and loss.
+- [Cloud computing threats](./../16-cloud-computing/cloud-security.md#cloud-computing-risks-and-threats) such as data breach and loss.
 - [IoT threats](./../18-iot-and-ot/iot-security.md#iot-threats) usually caused by insecure devices and hardware constraints (battery, memory, CPU etc.)
 - [Ransomware](../07-malware/malware-overview.md#ransomware): Restricts access to your files and requires payment to be granted access
 - [Mobile threats](./../17-mobile-platforms/mobile-attacks.md#mobile-threats)
