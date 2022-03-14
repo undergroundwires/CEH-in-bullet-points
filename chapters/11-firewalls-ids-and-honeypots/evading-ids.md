@@ -66,7 +66,7 @@
 - 📝 Designed to create a great deal of log noise in an attempt to blend real attacks with the false
 - Attackers craft packets known to trigger alerts within the IDS, forcing it to generate a large number of false reports
 - Similar to the DoS method is to generate a large amount of alert data that must be logged
-- Make is difficult legitimate attacks and false positives by looking at logs
+- Makes it difficult to differentiate between legitimate attacks and false positives by looking at logs
 - Can even generate false positives specific to an IDS if attacker has knowledge of IDS used.
 - Tools include [inundator](http://inundator.sourceforge.net/): intrusion detection false positives generator.
 
@@ -98,7 +98,7 @@
 
 - [`fragroute`](https://tools.kali.org/information-gathering/fragroute) for [packet fragmentation](../03-scanning-networks/bypassing-ids-and-firewall.md#packet-fragmentation)
 - Different scanners such as `nmap` has also [options to evade IDS](https://Nmap.org/book/subvert-ids.html#avoid-ids).
-- Also many web vulnerability scanners can be used such as [Nikto](./../05-vulnerabilities/vulnerability-analysis.md#nikto)], [Whisker](#whisker) and [Nessus](./../05-vulnerabilities/vulnerability-analysis.md#nessus)
+- Also many web vulnerability scanners can be used such as [Nikto](./../05-vulnerabilities/vulnerability-analysis.md#nikto), [Whisker](#whisker) and [Nessus](./../05-vulnerabilities/vulnerability-analysis.md#nessus)
 
 ### Whisker
 
