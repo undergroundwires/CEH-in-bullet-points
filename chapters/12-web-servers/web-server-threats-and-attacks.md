@@ -136,7 +136,7 @@
 
 ### Web cache poisoning flow
 
-1. Find the service code that vulnerable to filling the HTTP header field with many headers.
+1. Find the service code that is vulnerable to filling the HTTP header field with many headers.
 2. Force the cache server to flush its actual cache content
    - E.g. by sending `Pragma: no-cache` or `Cache-Control: no-cache` headers in a request.
 3. Send a specially crafted request to store in cache
