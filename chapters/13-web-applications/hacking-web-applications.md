@@ -87,7 +87,7 @@
 
 - [**OWASP Top 10 Threats**](./owasp-top-10-threats.md)
   - • Injection • Broken authentication • Sensitive data exposure • XML External Entities (XXE) • Broken Access Control • Security misconfiguration • Cross-Site Scripting (XSS) • Insecure deserialization • Using components with known vulnerabilities • Insufficient logging and monitoring
-- [**Web-server threats**](../../chapters/12-web-servers/web-server-threats-and-attacks.md)
+- [**Web-server threats**](../12-web-servers/web-server-threats-and-attacks.md)
   - • Denial-of-Service (DoS) • Buffer Overflow
 - **Obfuscation application**: Obfuscated attacks using e.g. different encodings.
 - **Broken account management**

@@ -1,6 +1,14 @@
 name: Quality checks
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [ master ]
+    paths-ignore:
+       - '.github/workflows/*.yml'
+  pull_request:
+    branches: [ master ]
+    paths-ignore:
+       - '.github/workflows/*.yml'
 
 jobs:
 
