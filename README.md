@@ -1,16 +1,18 @@
-# Certified ethical hacker in bullet points
-
-[![Quality checks status](https://github.com/undergroundwires/CEH-in-bullet-points/workflows/Quality%20checks/badge.svg)](https://github.com/undergroundwires/CEH-in-bullet-points/actions)
-[![GitHub sponsors](https://undergroundwires.dev/img/badges/donate/flat.svg)](https://undergroundwires.dev/donate?project=Azure-in-bullet-points)
-
+# Certified ethical hacker Notes
 - This repo contains study notes for Certified Ethical Hacker exam.
 - The notes are comprehensive and written with goal of covering all exam areas.
 - It includes many real-life tips and tricks to keep practical value in the content.
 - Combines and summarizes a lot of education materials from many different sources.
-  - I passed the exam with 119/125 score with these notes.
 - 💡 A good way is using material is using the search function extensively, there are many cross references throughout the material to help you navigate, feel free to ignore them if you're reading for the first time.
 - Good luck & enjoy studying! ☕
 - ✨ Contributions of any kind are welcome!
+
+
+## Udemy Course Link
+https://www.udemy.com/course/ec-council-ceh/
+
+## Notion Notes
+https://www.notion.so/ports-afff63bfb5e2436e95fbf155081f5710
 
 ## Symbols
 
@@ -24,6 +26,8 @@
   | 🤗 | Fact / trivia (most likely unrelated to the exam) |
 
 ## Content
+
+
 
 1. Introduction
    1. Information security
@@ -139,15 +143,4 @@
     2. [IoT security](./chapters/18-iot-and-ot/iot-security.md)
 19. [Exam readiness](chapters/19-exam-readiness/exam-readiness.md)
 
-[↑](#content)
 
-## Support
-
-- ⭐️ Simplest way to say thanks is just to it a star 🤩
-- ❤️ To show more support:
-  - ☕️ [buy me a coffee](https://buymeacoffee.com/undergroundwire)
-  - 👏🏿 [sponsor me](https://github.com/sponsors/undergroundwires)
-  - 🎈 [donate using another way](https://undergroundwires.dev/donate)
-- ✨ Contributions of any kind are welcome!
-
-[↑](#content)
