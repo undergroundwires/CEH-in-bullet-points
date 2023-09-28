@@ -3,10 +3,16 @@
 - The notes are comprehensive and written with goal of covering all exam areas.
 - It includes many real-life tips and tricks to keep practical value in the content.
 - Combines and summarizes a lot of education materials from many different sources.
-  - I passed the exam with 119/125 score with these notes.
 - 💡 A good way is using material is using the search function extensively, there are many cross references throughout the material to help you navigate, feel free to ignore them if you're reading for the first time.
 - Good luck & enjoy studying! ☕
 - ✨ Contributions of any kind are welcome!
+
+
+## Udemy Course Link
+https://www.udemy.com/course/ec-council-ceh/
+
+## Notion Notes
+https://www.notion.so/ports-afff63bfb5e2436e95fbf155081f5710
 
 ## Symbols
 
@@ -20,6 +26,8 @@
   | 🤗 | Fact / trivia (most likely unrelated to the exam) |
 
 ## Content
+
+
 
 1. Introduction
    1. Information security
@@ -135,7 +143,4 @@
     2. [IoT security](./chapters/18-iot-and-ot/iot-security.md)
 19. [Exam readiness](chapters/19-exam-readiness/exam-readiness.md)
 
-[↑](#content)
 
-
-[↑](#content)
