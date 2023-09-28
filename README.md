@@ -1,4 +1,4 @@
-# Certified ethical hacker in bullet points
+# Certified ethical hacker Notes
 
 [![Quality checks status](https://github.com/undergroundwires/CEH-in-bullet-points/workflows/Quality%20checks/badge.svg)](https://github.com/undergroundwires/CEH-in-bullet-points/actions)
 [![GitHub sponsors](https://undergroundwires.dev/img/badges/donate/flat.svg)](https://undergroundwires.dev/donate?project=Azure-in-bullet-points)
