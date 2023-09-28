@@ -1,8 +1,4 @@
 # Certified ethical hacker Notes
-
-[![Quality checks status](https://github.com/undergroundwires/CEH-in-bullet-points/workflows/Quality%20checks/badge.svg)](https://github.com/undergroundwires/CEH-in-bullet-points/actions)
-[![GitHub sponsors](https://undergroundwires.dev/img/badges/donate/flat.svg)](https://undergroundwires.dev/donate?project=Azure-in-bullet-points)
-
 - This repo contains study notes for Certified Ethical Hacker exam.
 - The notes are comprehensive and written with goal of covering all exam areas.
 - It includes many real-life tips and tricks to keep practical value in the content.
