@@ -1,4 +1,4 @@
-# Network footprinting
+   # Network footprinting
 
 - Collecting network range information to use the information to map the target's network
 - Gives insights into how the network is structured and which machines belong to the network.
