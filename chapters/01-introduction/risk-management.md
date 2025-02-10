@@ -130,7 +130,7 @@
 - Used often in risk analysis and business impact analysis
 - 📝 `ALE = ARO (Annual rate of occurrence) x SLE (Single loss expectancy)`
 - **Annual rate of occurrence (ARO)**
-  - E.g. if it occurs every month than it's 12, if it's every second year than it's 1/2
+  - E.g. if it occurs every month then it's 12, if it's every second year then it's 1/2
 - **Single loss expectancy (SLE)**
   - Total loss value for a single asset after an exploit
   - `SLE (Single Loss Expectancy) = AV (Asset Value) x EF (Exposure Factor)`
